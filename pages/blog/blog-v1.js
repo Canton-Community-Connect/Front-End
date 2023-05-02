@@ -12,17 +12,17 @@ const ListWithSidebar = () => {
   return (
     <>
       <Seo pageTitle="List With Sidebar" />
-      {/* <!-- 
+      {/* <!--
       =============================================
       Theme Default Menu
-      ============================================== 	
+      ==============================================
       --> */}
       <DefaulHeader />
 
-      {/* 
+      {/*
 			=============================================
 			Feature Section Fifty One
-			============================================== 
+			==============================================
 			*/}
       <div className="fancy-feature-fiftyOne position-relative mt-200">
         <div className="container">
@@ -30,10 +30,10 @@ const ListWithSidebar = () => {
             <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 lg-mb-40">
                 <div className="sc-title-two fst-italic position-relative">
-                  Blog
+                  Opportunities
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Check our inside news &amp; update.
+                  Check the Best Volunteer Opportunities in Canton.
                 </h2>
               </div>
             </div>
@@ -96,10 +96,10 @@ const ListWithSidebar = () => {
         </div>
       </div>
 
-      {/* 
+      {/*
         =============================================
         Contact Section One
-        ============================================== 
+        ==============================================
         */}
       <DefaultFooter />
     </>

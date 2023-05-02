@@ -77,7 +77,7 @@ const MainMenu = () => {
           </li>
           {/* End li (home mega menu) */}
 
-          <li className="nav-item  dropdown">
+        {/*  <li className="nav-item  dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -123,10 +123,10 @@ const MainMenu = () => {
                 </Link>
               </li>
             </ul>
-          </li>
+          </li>*/}
           {/* End li (pages) */}
 
-          <li className="nav-item dropdown">
+         {/* <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -146,7 +146,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li>*/}
           {/* End li (portfolio) */}
 
           <li className="nav-item dropdown">
@@ -158,7 +158,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Blog
+              Opportunities
             </a>
             <ul className="dropdown-menu">
               {blogItems.map((blog, index) => (
@@ -171,6 +171,12 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (blog) */}
+
+          <li className="nav-item">
+            <Link className="nav-link" href="/pages-menu/about-us-v1" role="button">
+              About Us
+            </Link>
+          </li>
 
           <li className="nav-item">
             <Link className="nav-link" href="/contact" role="button">

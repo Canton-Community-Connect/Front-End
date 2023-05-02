@@ -24,10 +24,10 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             <h1 className="hero-heading fw-500 tx-dark">
-              Everything for your <span>Home</span> &amp; Future.
+              Join the <span>Canton</span> community and make a difference today.
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
-              Instant everything. Incredible prices. Big heart.
+              Discover local volunteering opportunities with our app!
             </p>
             <form
               className="search-area d-md-inline-flex m-auto"

@@ -5,7 +5,7 @@ import Image from "next/image";
 const Blog = () => {
   return (
     <>
-      {blogData.slice(6, 11).map((blog) => (
+      {blogData.slice(3, 7).map((blog) => (
         <article
           className={`blog-meta-three mb-80 lg-mb-40 ${blog.className}`}
           key={blog.id}
