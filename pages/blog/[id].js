@@ -1,209 +1,239 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import SearchBox from "../../components/blog/SearchBox";
-import Category from "../../components/blog/Category";
-import RecentPost from "../../components/blog/RecentPost";
-import BannerPost from "../../components/blog/BannerPost";
-import Tag from "../../components/blog/blog-details/Tag";
-import SocialShare from "../../components/blog/blog-details/SocialShare";
-import SingleComments from "../../components/blog/blog-details/SingleComments";
-import CommentBox from "../../components/blog/blog-details/CommentBox";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import SocialShare from "../../components/portfolio/portfolio-details/SocialShare";
+import ProjectDetails from "../../components/portfolio/portfolio-details/ProjectDetails";
+import ProjectSlide from "../../components/portfolio/portfolio-details/ProjectSlide";
+import CallToAction from "../../components/portfolio/CallToAction";
+import PortfolioGallery from "../../components/portfolio/portfolio-details/PortfolioGallery";
 import { useRouter } from "next/router";
-import blogsData from "../../data/blog";
-import Image from "next/image";
+import { useEffect, useState } from "react";
+import opportunitiesData from "../../data/opportunities";
+import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
 
-const DynamicBlogDetails = () => {
+const DynamicPortfolioDetails = () => {
   const router = useRouter();
-  const [blog, setBlogItem] = useState({});
+  const [opportunity, setOpportunity] = useState({});
   const id = router.query.id;
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
-    else setBlogItem(blogsData.find((item) => item.id == id));
+    else setOpportunity(opportunitiesData.find((item) => item.id == id));
 
     return () => {};
   }, [id]);
 
   return (
     <>
-      <Seo pageTitle="Dynami Blog Details" />
-      {/* <!-- 
+      <Seo pageTitle="Portfolio Details" />
+      {/* <!--
       =============================================
       Theme Default Menu
-      ============================================== 	
+      ==============================================
       --> */}
       <DefaulHeader />
 
-      {/* 
-			=============================================
-			Feature Section Fifty One
-			============================================== 
-			*/}
-      <div className="fancy-feature-fiftyOne position-relative mt-250 lg-mt-200">
-        <div className="container">
-          <div className="row">
-            <div className="col-xxl-8 col-lg-9 wow fadeInLeft">
-              <p className="blog-pubish-date">
-                Digital Marketing . 2 July . By
-                <a href="#" className="fw-500">
-                  Hasan Ira
-                </a>
-              </p>
-              <h2 className="blog-heading-one tx-dark">{blog?.title}</h2>
-            </div>
-          </div>
-        </div>
-        {/* /.container */}
+      {/*
+        =============================================
+        Feature Section Fifty One
+        ==============================================
+        */}
+      <PortfolioDetailsTitle portfolio={opportunity} />
 
-        <img
-          src="/images/shape/shape_172.svg"
-          alt="shape"
-          className="lazy-img shapes shape-two"
-        />
+      {/*
+			=============================================
+				Portfolio Details Two
+			==============================================
+			*/}
+      <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
+        <div className="project-desctiption">
+          <div className="container">
+            <div className="row">
+
+              {/* End .col-lg-8 */}
+
+              <div className="col-lg-4" data-aos="fade-right">
+                <div className="sidebar ms-xl-5">
+                  <h3 className="mb-20">About</h3>
+                  <p className="border-bottom pb-40 mb-35 lg-pb-20">
+                    {opportunity.title}
+                  </p>
+                  <div className="row">
+                    <ProjectDetails details={opportunity} />
+                  </div>
+                  {/* End .row */}
+
+                  <SocialShare />
+                </div>
+              </div>
+
+              <div className="col-lg-8" data-aos="fade-left">
+                <ProjectSlide slide={opportunity} />
+                {/* /#gallery-carousel */}
+              </div>
+              {/* End col-lg-4 */}
+            </div>
+            {/* End .row */}
+
+            <div className="col-xl-9  mt-120 lg-mt-80">
+              <div
+                className="title-style-twelve mb-45 lg-mb-30 wow fadeInUp"
+                data-aos="fade-up"
+              >
+                <div className="sc-title fst-italic position-relative">
+                  Overview
+                </div>
+                <h2 className="main-title fw-500 tx-dark">About Rodpen</h2>
+              </div>
+              {/* /.title-style-twelve */}
+              <p data-aos="fade-up">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullaum laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit volupta velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p data-aos="fade-up">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum magna quis
+                nostured.
+              </p>
+              <div className="row">
+                <div className="col-xl-8">
+                  <div
+                    className="title-style-twelve mb-45 pt-75 lg-pt-40 lg-mb-30 wow fadeInUp"
+                    data-aos="fade-up"
+                  >
+                    <div className="sc-title fst-italic position-relative">
+                      Work Proccess
+                    </div>
+                    <h2 className="main-title fw-500 tx-dark">
+                      Find out the design solution.
+                    </h2>
+                  </div>
+                  {/* /.title-style-twelve */}
+                </div>
+              </div>
+              <p data-aos="fade-up">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p data-aos="fade-up">
+                Enim eu turpis egestas pretium aenean pharetra. Dui accumsan sit
+                amet nulla facilisi morbi tempus iaculis. Eu ultrices vitae
+                auctor eu augue. Sed turpis tincidunt id aliquet risus Purus in
+                massa tempor nec feugiat nisl pretium fusce. Feugiat vivamus at
+                augue eget arcu dictum. Gravida quis blandit turpis cursus in
+                hac habitasse platea dictumst.
+              </p>
+              <div className="row">
+                <PortfolioGallery />
+              </div>
+
+              <div
+                className="title-style-twelve mb-45 mt-120 lg-mb-30 lg-mt-80 wow fadeInUp"
+                data-aos="fade-up"
+              >
+                <div className="sc-title fst-italic position-relative">
+                  Work Proccess
+                </div>
+                <h2 className="main-title fw-500 tx-dark">Final Result</h2>
+              </div>
+              {/* /.title-style-twelve */}
+
+              <p data-aos="fade-up">
+                Content creators and human resources personnel are able to
+                seamlessly update the website through graphical interfaces, and
+                the site simply rebuilds itself along with search engine indexes
+                as the OpenWeb team continues to create.
+              </p>
+              <p data-aos="fade-up">
+                Enim eu turpis egestas pretium aenean pharetra. Dui accumsan sit
+                amet nulla facilisi mor tempu iaculis. Eu ultrices vitae auctor
+                eu augue. Sed turpis tincidunt id aliquet risus Purus in massa
+                tempor nec feugiat nisl pretium fusce. Feugiat vivamus at augue
+                eget arcu dictum. Gravida quis blandit turpis cursus in hac
+                habitasse platea dictumst.
+              </p>
+            </div>
+            {/* End col-xl-9 */}
+
+            <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
+              <div className="row gx-xxl-5">
+                <div className="col-sm-6">
+                  <div className="arrow-block position-relative zn2 mt-20 wow fadeInLeft">
+                    <img
+                      src="/images/media/img_92.jpg"
+                      alt="media"
+                      className="lazy-img w-100"
+                    />
+                    <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
+                      <div className="text-white fw-500 pg-title">
+                        Prev Project
+                      </div>
+                      <a
+                        href="#"
+                        className="arrow rounded-circle text-center tran3s"
+                      >
+                        <i className="bi bi-arrow-left" />
+                      </a>
+                    </div>
+                    {/* /.hover-content */}
+                  </div>
+                  {/* /.arrow-block */}
+                </div>
+                {/* End .col-6 */}
+
+                <div className="col-sm-6">
+                  <div className="arrow-block position-relative zn2 mt-20 wow fadeInRight">
+                    <img
+                      src="/images/media/img_93.jpg"
+                      alt="media"
+                      className="lazy-img w-100"
+                    />
+                    <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
+                      <div className="text-white fw-500 pg-title">
+                        Next Project
+                      </div>
+                      <a
+                        href="#"
+                        className="arrow rounded-circle text-center tran3s"
+                      >
+                        <i className="bi bi-arrow-right" />
+                      </a>
+                    </div>
+                    {/* /.hover-content */}
+                  </div>
+                  {/* /.arrow-block */}
+                </div>
+                {/* End .col-6 */}
+              </div>
+              {/* End .row */}
+            </div>
+            {/* /.project-pagination */}
+          </div>
+          {/* End .container */}
+        </div>
+        {/* /.project-desctiption */}
       </div>
+      {/* /.project-details */}
 
       {/*
 			=====================================================
-				Blog Section Five
+				Fancy Short Banner Twelve
 			=====================================================
 			*/}
-      <div className="blog-details-one mt-80 lg-mt-60">
-        <div className="container">
-          <div className="border-bottom pb-130 lg-pb-60">
-            <div className="row gx-xl-5">
-              <div className="col-lg-8">
-                <div className="blog-meta-wrapper pe-xxl-5">
-                  <article className="blog-details-content">
-                    {blog.imageSrc && (
-                      <Image
-                        width={816}
-                        height={597}
-                        layout="responsive"
-                        src={blog.imageSrc}
-                        alt={blog.title}
-                        className="lazy-img image-meta w-100"
-                      />
-                    )}
-                    <p>
-                      Tomfoolery crikey bits and bobs brilliant bamboozled down
-                      the pub amongst brolly hanky panky, cack bonnet arse over
-                      tit burke bugger all mate bodge. cillum dolore eu fugiat
-                      pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est
-                      laborum.Suspendisse interdum consectetur libero id faucibu
-                      nisl. Lacus vel facilisis volutpat est velit egestas.
-                    </p>
-                    <p>
-                      Tempus imperdiet nulla malesuada pellentesque elit eget
-                      gravida cum. Sit amet ris nullam eget felis. Enim praesent
-                      elementum facilisis leo. Ultricies leo integer.
-                    </p>
-                    <Image
-                      width={800}
-                      height={410}
-                      src="/images/blog/blog_img_26.jpg"
-                      alt="blog"
-                      className="lazy-img image-meta w-100"
-                    />
-                    <h4>
-                      This response is important for our ability to from
-                      mistakes but it alsogives rise to self-criticism.
-                    </h4>
-                    <p>
-                      One touch of a red-hot stove is usually all we need to
-                      avoid that kind of discomfort in future The same is true
-                      as we experienc the emotional of stress from our
-                      instances. We are quickly learn to fear and thus
-                      automatically. Lorem ipsum dolor sit amet, consectetur
-                      adipis elit quis extraction labore.
-                    </p>
-                    <h2>Work Harder &amp; Gain Succsess</h2>
-                    <p>
-                      One touch of a red-hot stove is usually all we need to
-                      avoid that kind of discomfort in quis elit future. The
-                      same Duis aute irure dolor in reprehenderit .
-                    </p>
-                    <p>
-                      is true as we experience the emotional sensation of stress
-                      from our firs social rejec ridicule.We quickly learn to
-                      fear and thus automatically. potentially stressful
-                      situation of wlir ext quiert all kinds, including the most
-                      common of all.
-                    </p>
-                    <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
-                      <Tag />
-                      <SocialShare />
-                    </div>
-                    {/* /.bottom-widget */}
-                  </article>
-                  {/* /.blog-details-content */}
+      <CallToAction />
 
-                  <div className="blog-comment-area">
-                    <h3 className="blog-inner-title tx-dark pb-15">
-                      2 Comments
-                    </h3>
-                    <SingleComments />
-                  </div>
-                  {/* /.blog-comment-area */}
-
-                  <div className="blog-comment-form">
-                    <h3 className="blog-inner-title tx-dark">
-                      Leave A Comment
-                    </h3>
-                    <p>
-                      <Link href="/login" className="text-decoration-underline">
-                        Sign
-                      </Link>
-                      in to post your comment or signup if you dont have any
-                      account.
-                    </p>
-                    <CommentBox />
-                  </div>
-                  {/* /.blog-comment-form */}
-                </div>
-              </div>
-              {/* End .col-lg-8 */}
-
-              <div className="col-lg-4 col-md-8">
-                <div className="blog-sidebar md-mt-70">
-                  <div className="blog-sidebar-search mb-55 md-mb-40">
-                    <SearchBox />
-                  </div>
-                  {/* /.blog-sidebar-search */}
-
-                  <div className="blog-sidebar-category mb-60 md-mb-50">
-                    <h4 className="sidebar-title">Category</h4>
-                    <Category />
-                  </div>
-                  {/* /.blog-sidebar-category */}
-
-                  <div className="sidebar-recent-news mb-60 md-mb-50">
-                    <h4 className="sidebar-title">Recent News</h4>
-                    <RecentPost />
-                  </div>
-                  {/* /.sidebar-recent-news */}
-
-                  <BannerPost />
-                  {/* /.sidebar-banner-add */}
-                </div>
-                {/* /.blog-sidebar */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* 
+      {/*
         =============================================
         Contact Section One
-        ============================================== 
+        ==============================================
         */}
       <DefaultFooter />
     </>
   );
 };
 
-export default DynamicBlogDetails;
+export default DynamicPortfolioDetails;

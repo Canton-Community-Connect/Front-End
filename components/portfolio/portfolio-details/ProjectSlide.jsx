@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const ProjectSlide = ({ slide }) => {
-  const images = [slide?.image ?? "", slide?.image ?? "", slide?.image ?? ""];
+  const images = [slide?.imageSrc ?? "", slide?.imageSrc ?? ""];
 
   return (
     <div

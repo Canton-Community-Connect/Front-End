@@ -26,36 +26,33 @@ const DynamicPortfolioDetails = () => {
   return (
     <>
       <Seo pageTitle="Portfolio Details" />
-      {/* <!-- 
+      {/* <!--
       =============================================
       Theme Default Menu
-      ============================================== 	
+      ==============================================
       --> */}
       <DefaulHeader />
 
-      {/* 
+      {/*
         =============================================
         Feature Section Fifty One
-        ============================================== 
+        ==============================================
         */}
       <PortfolioDetailsTitle portfolio={portfolio} />
 
-      {/* 
+      {/*
 			=============================================
 				Portfolio Details Two
-			============================================== 
+			==============================================
 			*/}
       <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8" data-aos="fade-right">
-                <ProjectSlide slide={portfolio} />
-                {/* /#gallery-carousel */}
-              </div>
+
               {/* End .col-lg-8 */}
 
-              <div className="col-lg-4" data-aos="fade-left">
+              <div className="col-lg-4" data-aos="fade-right">
                 <div className="sidebar ms-xl-5">
                   <h3 className="mb-20">About</h3>
                   <p className="border-bottom pb-40 mb-35 lg-pb-20">
@@ -68,6 +65,11 @@ const DynamicPortfolioDetails = () => {
 
                   <SocialShare />
                 </div>
+              </div>
+
+              <div className="col-lg-8" data-aos="fade-left">
+                <ProjectSlide slide={portfolio} />
+                {/* /#gallery-carousel */}
               </div>
               {/* End col-lg-4 */}
             </div>
@@ -224,10 +226,10 @@ const DynamicPortfolioDetails = () => {
 			*/}
       <CallToAction />
 
-      {/* 
+      {/*
         =============================================
         Contact Section One
-        ============================================== 
+        ==============================================
         */}
       <DefaultFooter />
     </>

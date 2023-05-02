@@ -40,17 +40,18 @@ const DefaulHeader = () => {
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            <Link
-              href="/login"
-              className="login-btn-three rounded-circle tran3s me-3"
-            >
-              <i className="bi bi-person" />
-            </Link>
+
             <Link
               href="/contact"
-              className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
+              className="btn-twentyOne fw-500 tran3s d-none d-lg-block me-3"
             >
-              Contact us
+              Create Event
+            </Link>
+            <Link
+                href="/login"
+                className="login-btn-three rounded-circle tran3s "
+            >
+              <i className="bi bi-person" />
             </Link>
           </div>{" "}
           {/* /.right-widget */}
