@@ -47,9 +47,9 @@ const IntroAbout = () => {
               onClick={() => setOpen(true)}
             /> */}
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              Lorem ipsum dolor sit amet
-              <span className="fw-500">~$7,000,000</span> consectetur
-              adipisicing elit. Quae, minima! Lorem, ipsum.
+              The Canton Community recently raised
+              <span className="fw-500"> ~$7,000,000</span> for local animal
+              shelters through our volunteering efforts.
             </p>
             {/* <h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"
