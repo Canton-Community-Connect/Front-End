@@ -5,20 +5,20 @@ import Image from "next/image";
 const OppList = () => {
   return (
     <>
-      {opportunitiesData.slice(1, 4).map((blog) => (
+      {opportunitiesData.slice(0, 4).map((opportunity) => (
         <article
-          className={`blog-meta-three mb-80 lg-mb-40 ${blog.className}`}
-          key={blog.id}
+          className={`blog-meta-three mb-80 lg-mb-40 ${opportunity.className}`}
+          key={opportunity.id}
           data-aos="fade-up"
-          data-aos-delay={blog.delay}
+          data-aos-delay={opportunity.delay}
         >
-          {blog.imageSrc && (
+          {opportunity.imageSrc && (
             <figure className="post-img m0">
-              <Link href={`/blog/${blog.id}`} className="w-100 d-block">
+              <Link href={`/opportunity/${opportunity.id}`} className="w-100 d-block">
                 <Image
                   width={800}
                   height={450}
-                  src={blog.imageSrc}
+                  src={opportunity.imageSrc}
                   alt="blog"
                   className="lazy-img w-100 tran4s"
                 />
@@ -27,14 +27,14 @@ const OppList = () => {
           )}
           <div className="post-data mt-40 lg-mt-30">
             <div className="post-date opacity-75 text-uppercase">
-              {blog.date}
+              {opportunity.date}
             </div>
-            <Link href={`/blog/${blog.id}`} className="mt-10 mb-25 lg-mb-20">
-              <h4 className="tran3s blog-title xl tx-dark">{blog.title}</h4>
+            <Link href={`/opportunity/${opportunity.id}`} className="mt-10 mb-25 lg-mb-20">
+              <h4 className="tran3s blog-title xl tx-dark">{opportunity.title}</h4>
             </Link>
             <div>
               <Link
-                href={`/blog/${blog.id}`}
+                href={`/opportunity/${opportunity.id}`}
                 className="read-btn-two fw-500 tran3s"
               >
                 Read More

@@ -25,7 +25,7 @@ const DynamicPortfolioDetails = () => {
 
   return (
     <>
-      <Seo pageTitle="Portfolio Details" />
+      <Seo pageTitle="Opportunity Details" />
       {/* <!--
       =============================================
       Theme Default Menu

@@ -1,12 +1,12 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Blog1 from "../../components/blog/Blog1";
 import Pagination from "../../components/blog/Pagination";
 import SearchBox from "../../components/blog/SearchBox";
 import Category from "../../components/blog/Category";
 import RecentPost from "../../components/blog/RecentPost";
 import BannerPost from "../../components/blog/BannerPost";
+import OppList from "../../components/opportunity/OppList";
 
 const OppoertunitiesListWithSidebar = () => {
   return (
@@ -58,7 +58,7 @@ const OppoertunitiesListWithSidebar = () => {
             <div className="row gx-xl-5">
               <div className="col-lg-8">
                 <div className="blog-meta-wrapper pe-xxl-5">
-                  <Blog1 />
+                  <OppList />
                 </div>
                 {/* /.blog-meta-wrapper */}
                 <div className="page-pagination-one pt-15">

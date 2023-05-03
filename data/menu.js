@@ -76,10 +76,10 @@ export const portfolioItems = [
 ];
 
 export const blogItems = [
-  { link: "/blog/blog-v1", text: "List With sidebar" },
-  { link: "/blog/blog-v2", text: "Grid With sidebar" },
-  { link: "/blog/blog-v3", text: "Grid Layout" },
-  { link: "/blog/1", text: "Blog Details" },
+  { link: "/blog/sub/tech", text: "Technology" },
+  { link: "/blog/sub/health-care", text: "Health care" },
+  { link: "/blog/sub/community", text: "Community" },
+  { link: "/blog/sub/edu", text: "Education/Literacy" },
 ];
 
 export const navItems = [
