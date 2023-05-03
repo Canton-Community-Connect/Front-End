@@ -10,7 +10,7 @@ module.exports = [
             "Detroit, MI 48223",
         spotAvailable:"",
         organization: "REDFORD BRIGHTMOOR INITIATIVE",
-        incentive: "50 Points",
+        incentive: "50 Points/per hour",
         skills: ["Multi-Tasking","People Skills"],
         requirements: "4 hours per week and up - your choice!\n" +
             "Able to lift bags of clothing.",
@@ -31,7 +31,7 @@ module.exports = [
             "Detroit, MI 48223",
         spotAvailable:"",
         organization: "REDFORD BRIGHTMOOR INITIATIVE",
-        incentive: "20 points",
+        incentive: "20 points/per hour",
         requirements: "4 hours per week and up - your choice!\n" +
             "Able to lift bags of clothing.",
         skills: ["Multi-Tasking","People Skills"],
