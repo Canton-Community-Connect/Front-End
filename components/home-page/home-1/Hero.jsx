@@ -3,11 +3,11 @@ import React from "react";
 
 const Hero1 = () => {
   const options = [
-    { value: 0, display: "Select insurance type.." },
-    { value: 1, display: "Life Insurance" },
-    { value: 2, display: "Health insurance" },
-    { value: 3, display: "Property insurance" },
-    { value: 4, display: "Motor insurance" },
+    { value: 0, display: "Select Opportunity type" },
+    { value: 1, display: "Animal Care" },
+    { value: 2, display: "Health Care" },
+    { value: 3, display: "Community Contributions" },
+    { value: 4, display: "Education/Literacy" },
   ];
 
   const handleSubmit = (event) => {
@@ -24,7 +24,8 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             <h1 className="hero-heading fw-500 tx-dark">
-              Join the <span>Canton</span> community and make a difference today.
+              Join the <span>Canton</span> community and make a difference
+              today.
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
               Discover local volunteering opportunities with our app!
@@ -51,12 +52,12 @@ const Hero1 = () => {
             </form>
             {/* End form */}
 
-            <div>
+            {/* <div>
               <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80">
                 <img src="/images/icon/icon_99.svg" alt="" className="me-1" />
                 <span>An UK insurer approved by the UICO.</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

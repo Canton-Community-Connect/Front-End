@@ -27,35 +27,36 @@ const IntroAbout = () => {
 
   return (
     <>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="rDYdeq3JW_E"
         onClose={() => setOpen(false)}
-      />
+      /> */}
 
       <div className="row">
         <div className="col-xl-5 col-md-6 order-md-last">
           <div className="text-wrapper md-pb-70">
-            <Image
+            {/* <Image
               width={66}
               height={66}
               src="/images/icon/icon_103.svg"
               alt="icon"
               className="lazy-img cursor-pointer"
               onClick={() => setOpen(true)}
-            />
+            /> */}
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              The team signed <span className="fw-500">~$7,000,000</span> in new
-              business in July. Accelerator has been a large part of that.
+              Lorem ipsum dolor sit amet
+              <span className="fw-500">~$7,000,000</span> consectetur
+              adipisicing elit. Quae, minima! Lorem, ipsum.
             </p>
-            <h6
+            {/* <h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"
               data-aos="fade-up"
             >
               Jessica Woodbeck
-            </h6>
+            </h6> */}
           </div>
           {/* /.text-wrapper */}
         </div>
@@ -73,11 +74,11 @@ const IntroAbout = () => {
               height={732}
               layout="intrinsic"
               src="/images/media/img_53.png"
-              className="lazy-img avatar-img"
+              className=" avatar-img"
               alt="man"
             />
 
-            {cardsData.map((item) => (
+            {/* {cardsData.map((item) => (
               <div
                 className={`card-style ${item.cardNo} d-flex justify-content-center`}
                 key={item.id}
@@ -90,7 +91,7 @@ const IntroAbout = () => {
                   <p className="fs-20 tx-dark m0">{item.subtitle}</p>
                 </div>
               </div>
-            ))}
+            ))} */}
             {/* /.card */}
           </div>
         </div>

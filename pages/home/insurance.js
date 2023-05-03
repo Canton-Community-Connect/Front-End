@@ -2,17 +2,17 @@ import Link from "next/link";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
 import DefaulHeader from "../../components/header/DefaulHeader";
-import AppBanner from "../../components/home-page/home-1/AppBanner";
+// import AppBanner from "../../components/home-page/home-1/AppBanner";
 import Banner from "../../components/home-page/home-1/Banner";
-import Block from "../../components/home-page/home-1/Block";
-import Blog from "../../components/home-page/home-1/Blog";
-import ContactForm from "../../components/home-page/home-1/ContactForm";
-import Feature from "../../components/home-page/home-1/Feature";
+// import Block from "../../components/home-page/home-1/Block";
+// import Blog from "../../components/home-page/home-1/Blog";
+// import ContactForm from "../../components/home-page/home-1/ContactForm";
+// import Feature from "../../components/home-page/home-1/Feature";
 import Hero from "../../components/home-page/home-1/Hero";
 import IntroAbout from "../../components/home-page/home-1/IntroAbout";
 import Service from "../../components/home-page/home-1/Service";
-import Testimonial from "../../components/home-page/home-1/Testimonial";
-import WhyChoose from "../../components/home-page/home-1/WhyChoose";
+// import Testimonial from "../../components/home-page/home-1/Testimonial";
+// import WhyChoose from "../../components/home-page/home-1/WhyChoose";
 
 const Insurance = () => {
   return (
@@ -35,13 +35,39 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      <div className="fancy-feature-thirtyFour mt-50">
+
+      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
         <div className="container">
-          <div className="row gx-xxl-5">
-            <Feature />
+          <div className="wrapper position-relative">
+            <div className="row">
+              <div className="col-lg-6">
+                <div
+                  className="title-style-one text-center text-lg-start mb-40 md-mb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 tx-dark m0">
+                    View All Our Volunteer Opportunities.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <Service />
+            </div>
+            {/* /.row */}
+
+            <div className="text-center md-mt-50">
+              <Link
+                href="/pages-menu/service-v1"
+                className="btn-twentyTwo fw-500 tran3s"
+                data-aos="fade-left"
+              >
+                View all opportunities
+              </Link>
+            </div>
           </div>
         </div>
-        {/* <!-- /.container --> */}
+        {/* /.container */}
       </div>
       {/* <!-- /.fancy-feature-thirtyFour --> */}
       {/*
@@ -52,10 +78,7 @@ const Insurance = () => {
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
         <div className="container" data-aos="fade-up">
           <Banner />
-          {/* /.top-banner */}
         </div>
-        {/* End .container */}
-
         <div className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
           <div className="container">
             <IntroAbout />
@@ -69,7 +92,7 @@ const Insurance = () => {
 				Feature Section Thirty Six
 			============================================== 
 			*/}
-      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
+      {/* <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
         <div className="container">
           <div className="wrapper position-relative">
             <div className="row">
@@ -86,10 +109,10 @@ const Insurance = () => {
             </div>
             <div className="row">
               <Service />
-            </div>
-            {/* /.row */}
+            </div> */}
+      {/* /.row */}
 
-            <div className="text-center md-mt-50">
+      {/* <div className="text-center md-mt-50">
               <Link
                 href="/pages-menu/service-v1"
                 className="btn-twentyTwo fw-500 tran3s"
@@ -97,18 +120,18 @@ const Insurance = () => {
               >
                 View all Services
               </Link>
-            </div>
-          </div>
-        </div>
-        {/* /.container */}
-      </div>
+            </div> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* /.container */}
+      {/* </div> */}
       {/* /.fancy-feature-thirtySix */}
       {/* 
 			=============================================
 				Feature Section Thirty Seven
 			============================================== 
 			*/}
-      <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
+      {/* <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
         <div className="container">
           <div className="row">
             <div
@@ -123,24 +146,21 @@ const Insurance = () => {
                   </h2>
                 </div>
                 <WhyChoose />
-                {/* /.accordion-style-five */}
-              </div>
+               </div>
             </div>
-            {/* End .col-6 */}
-
+ 
             <div className="col-xxl-5 col-lg-6 order-lg-first">
               <Block />
             </div>
           </div>
         </div>
-        {/* /.container */}
-      </div>
+       </div> */}
       {/* /.fancy-feature-thirtySeven */}
       {/*=====================================================
 				Feedback Section Eleven
 			=====================================================
 			*/}
-      <div
+      {/* <div
         className="feedback-section-eleven position-relative mt-200 pt-100 pb-70 lg-mt-120 lg-pt-70 lg-pb-50"
         data-aos="fade-up"
       >
@@ -154,27 +174,24 @@ const Insurance = () => {
             <Testimonial />
           </div>
 
-          {/* /.slider-wrapper */}
-        </div>
-        {/* /.inner-content */}
-      </div>
+         </div>
+       </div> */}
       {/* /.feedback-section-eleven */}
       {/* =============================================
 				Feature Section Thirty Eight
 			============================================== 
 			*/}
-      <div className="fancy-feature-thirtyEight mt-140 lg-mt-100">
+      {/* <div className="fancy-feature-thirtyEight mt-140 lg-mt-100">
         <div className="container">
           <AppBanner />
         </div>
-        {/* /.container */}
-      </div>
+      </div> */}
       {/* /.fancy-feature-thirtyEight */}
       {/*=====================================================
 				Fancy Short Banner Thirteen
 			=====================================================
 			*/}
-      <div
+      {/* <div
         className="fancy-short-banner-thirteen pt-170 pb-170 mt-130 lg-mt-100 lg-pt-80 lg-pb-80 "
         data-aos="fade-up"
       >
@@ -205,13 +222,11 @@ const Insurance = () => {
                     <div className="form-style-two md-mb-40">
                       <ContactForm />
                     </div>
-                    {/* /.form-style-two */}
-                  </div>
+                   </div>
                 </div>
               </div>
             </div>
-            {/* End .row */}
-
+ 
             <div className="shapes shape-text fw-500 fs-20 tx-dark text-center">
               Fill the <br />
               form
@@ -227,14 +242,13 @@ const Insurance = () => {
               className="lazy-img shapes shape-two"
             />
           </div>
-          {/* /.bg-wrapper */}
-        </div>
-      </div>
+         </div>
+      </div> */}
       {/* /.fancy-short-banner-thirteen */}
       {/* =============================================
 		   Blog Section Three
 		   ============================================== */}
-      <div className="blog-section-three mt-140 mb-170 lg-mt-100 lg-mb-100">
+      {/* <div className="blog-section-three mt-140 mb-170 lg-mt-100 lg-mb-100">
         <div className="container">
           <div className="position-relative">
             <div className="row align-items-end">
@@ -244,16 +258,16 @@ const Insurance = () => {
                   data-aos="fade-right"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">Our Blog</h2>
-                </div>
-                {/* /.title-style-one */}
-              </div>
-            </div>
-            {/* /.row */}
-            <div className="row gx-xxl-5">
-              <Blog />
-            </div>
-            {/* /.row */}
-            <div className="text-center xs-mt-40">
+                </div> */}
+      {/* /.title-style-one */}
+      {/* </div>
+            </div> */}
+      {/* /.row */}
+      {/* <div className="row gx-xxl-5">
+              <Blog /> */}
+      {/* </div> */}
+      {/* /.row */}
+      {/* <div className="text-center xs-mt-40">
               <Link
                 href="/blog/blog-v2"
                 className="btn-twentyTwo fw-500 tran3s"
@@ -264,29 +278,32 @@ const Insurance = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /.blog-section-three */}
       {/*
 			=====================================================
 				Footer
 			=====================================================
 			*/}
-      <div className="footer-style-ten theme-basic-footer zn2 position-relative">
+      <div className="footer-style-ten theme-basic-footer zn2 position-relative mt-120">
         <div className="container">
           <div className="inner-wrapper">
             <div className="row justify-content-between">
               <div className="col-lg-3 footer-intro mb-40">
                 <div className="logo">
                   <Link href="/">
-                    <img src="/images/logo/logo_02.png" alt="logo" width={95} />
+                    <img
+                      src="/images/logo/logo_01.png"
+                      alt="logo"
+                      width={145}
+                    />
                   </Link>
                 </div>
                 <p className="text-white opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
-                  Best Insurance Company.
+                  Canton's Community Resource
                 </p>
                 <p className="text-white opacity-50 fs-15 m0 d-none d-lg-block">
                   © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
-                  jano inc.
                 </p>
               </div>
               <Footer />

@@ -3,22 +3,42 @@ import Link from "next/link";
 const services = [
   {
     icon: "images/icon/icon_104.svg",
-    title: "Home Loan",
+    title: "Technology",
     delayAnim: 0,
   },
   {
     icon: "images/icon/icon_105.svg",
-    title: "Travel Insurance",
+    title: "Health care",
     delayAnim: 100,
   },
   {
     icon: "images/icon/icon_106.svg",
-    title: "Insure the Car",
+    title: "Community",
     delayAnim: 200,
   },
   {
     icon: "images/icon/icon_107.svg",
-    title: "Health Insurance",
+    title: "Education/Literacy",
+    delayAnim: 300,
+  },
+  {
+    icon: "images/icon/icon_107.svg",
+    title: "Human Rights",
+    delayAnim: 0,
+  },
+  {
+    icon: "images/icon/icon_107.svg",
+    title: "Senior Care",
+    delayAnim: 100,
+  },
+  {
+    icon: "images/icon/icon_107.svg",
+    title: "Animals",
+    delayAnim: 200,
+  },
+  {
+    icon: "images/icon/icon_107.svg",
+    title: "Nature",
     delayAnim: 300,
   },
 ];
@@ -37,8 +57,9 @@ const Service = () => {
             <div className="icon">
               <img src={service.icon} alt="" className="lazy-img m-auto" />
             </div>
-            <p className="fs-20 m0 pt-20">I want</p>
+            <p className="fs-20 m0 pt-20">View</p>
             <h4 className="tx-dark">{service.title}</h4>
+            {/* TODO: Update link to take to opportunities page */}
             <Link
               href="/pages-menu/service-details"
               className="read-more rounded-circle text-start tran3s"
