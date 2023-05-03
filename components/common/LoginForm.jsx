@@ -1,11 +1,24 @@
 import { useState } from "react";
+import { signInUser } from "../../store/user";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
+  const router = useRouter();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // handle form submission
+    dispatch(
+      signInUser({
+        email,
+      })
+    );
+    router.push("/opportunity/search");
   };
 
   const handleTogglePassword = () => {
@@ -22,7 +35,13 @@ const LoginForm = () => {
         <div className="col-12">
           <div className="input-group-meta mb-30">
             <label>Email</label>
-            <input type="email" placeholder="hasan@gmail.com" required />
+            <input
+              type="email"
+              placeholder="hasan@gmail.com"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
         </div>
         {/* End .col-12 */}
@@ -33,18 +52,19 @@ const LoginForm = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter Password"
-              className="pass_log_id"
               required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <span className="placeholder_icon" onClick={handleTogglePassword}>
               <span className=" d-flex align-items-center">
                 {showPassword ? (
                   <>
-                    <i class="fa-regular fa-eye"></i>
+                    <i className="fa-regular fa-eye"></i>
                   </>
                 ) : (
                   <>
-                    <i class=" fa-regular fa-eye-slash"></i>
+                    <i className=" fa-regular fa-eye-slash"></i>
                   </>
                 )}
               </span>

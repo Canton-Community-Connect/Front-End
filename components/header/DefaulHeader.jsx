@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import MainMenu from "./MainMenu";
 import Link from "next/link";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const DefaulHeader = () => {
   const [navbar, setNavbar] = useState(false);
+  const user = useSelector((state) => state.user);
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -40,16 +42,17 @@ const DefaulHeader = () => {
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-
+            {user.email && (
+              <Link
+                href="/contact"
+                className="btn-twentyOne fw-500 tran3s d-none d-lg-block me-3"
+              >
+                Create Event
+              </Link>
+            )}
             <Link
-              href="/contact"
-              className="btn-twentyOne fw-500 tran3s d-none d-lg-block me-3"
-            >
-              Create Event
-            </Link>
-            <Link
-                href="/login"
-                className="login-btn-three rounded-circle tran3s "
+              href="/login"
+              className="login-btn-three rounded-circle tran3s "
             >
               <i className="bi bi-person" />
             </Link>
