@@ -3,41 +3,41 @@ import Image from "next/image";
 const CampaignBlock = () => {
   const campaigns = [
     {
-      imgSrc: "/images/media/img_30.jpg",
+      imgSrc: "/images/opportunities/Plant-service.jpeg",
       goal: "$123,000",
       daysLeft: "2",
       ribbonBg: "#FF3F64",
-      title: "Education for all",
+      title: "Animal Shelter",
       description:
         "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
       aosDelay: "100",
     },
     {
-      imgSrc: "/images/media/img_31.jpg",
+      imgSrc: "/images/opportunities/Plant-service.jpeg",
       goal: "$47,000",
       daysLeft: "3",
       ribbonBg: "#FFBA3C",
-      title: "Feed African child",
+      title: "Local Garden",
       description:
         "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
       aosDelay: "200",
     },
     {
-      imgSrc: "/images/media/img_32.jpg",
+      imgSrc: "/images/opportunities/Plant-service.jpeg",
       goal: "$320,000",
       daysLeft: "5",
       ribbonBg: "#00E38A",
-      title: "Better Future",
+      title: "Senior Care",
       description:
         "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
       aosDelay: "300",
     },
     {
-      imgSrc: "/images/media/img_31.jpg",
+      imgSrc: "/images/opportunities/Plant-service.jpeg",
       goal: "$47,000",
       daysLeft: "3",
       ribbonBg: "#FFBA3C",
-      title: "Feed African child",
+      title: "Community Cleanup",
       description:
         "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
       aosDelay: "400",
@@ -56,31 +56,22 @@ const CampaignBlock = () => {
           <div className="card-style-eight mt-40 ">
             <div className="img-meta position-relative">
               <Image
-                width={364}
-                height={282}
+                width={264}
+                height={165}
+                style={{ filter: "brightness(0.5)" }}
                 src={campaign.imgSrc}
                 alt=""
                 className="lazy-img w-100"
               />
               <div className="donation-goal d-flex align-items-center justify-content-between position-absolute">
-                <div className="fw-500 text-white fs-20">
-                  Goal: {campaign.goal}
-                </div>
-                <div className="fs-15 text-white">
-                  {campaign.daysLeft} days left
-                </div>
+                <div className="fw-500 text-white fs-20">{campaign.title}</div>
               </div>
-              <div
-                className="ribbon position-absolute"
-                style={{ background: campaign.ribbonBg, width: "66%" }}
-              />
             </div>
-            <div className="text-meta pt-40 pb-25 ps-2 pe-2 pe-xl-4 ps-xl-4">
-              <h4 className="mb-5">{campaign.title}</h4>
+            <div className="text-meta pt-40  pe-2 ">
               <p className="mb-40">{campaign.description}</p>
-              <a href="#" className="btn-ten fs-16 fw-500 position-relative">
+              {/* <a href="#" className="btn-ten fs-16 fw-500 position-relative">
                 Donate Now <i className="fa-solid fa-angle-right" />
-              </a>
+              </a> */}
             </div>
             {/* /.text-meta */}
           </div>

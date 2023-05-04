@@ -1,28 +1,31 @@
 const features = [
   {
     icon: "/images/icon/icon_44.svg",
-    title: "Healthy Food",
+    title: "Organizer",
     color: "#FF5555",
+    description: "Organized 5 events",
     delay: 100,
   },
   {
     icon: "/images/icon/icon_45.svg",
-    title: "Clean Water",
+    title: "Go-Getter",
     color: "#36E0D1",
+    description: "Volunteered 5 times",
     delay: 200,
   },
   {
     icon: "/images/icon/icon_46.svg",
-    title: "Education",
+    title: "Communicator",
     color: "#FFD94F",
+    description: "Reached out to an organizer",
     delay: 300,
   },
-  {
-    icon: "/images/icon/icon_47.svg",
-    title: "Medical Care",
-    color: "#B855FF",
-    delay: 400,
-  },
+  // {
+  //   icon: "/images/icon/icon_47.svg",
+  //   title: "Feedback",
+  //   color: "#B855FF",
+  //   delay: 400,
+  // },
 ];
 
 const Features = () => {
@@ -30,7 +33,7 @@ const Features = () => {
     <>
       {features.map((feature, index) => (
         <div
-          className="col-lg-3 col-sm-6"
+          className="col-lg-4 col-sm-6"
           key={index}
           data-aos="fade-up"
           data-aos-delay={feature.delay}
@@ -41,7 +44,7 @@ const Features = () => {
             </div>
             <h4 className="mt-25 mb-35">{feature.title}</h4>
             <a href="#" className="read-btn tran3s">
-              Read More
+              {feature.description}
             </a>
             <span
               className="ribbon position-absolute"
