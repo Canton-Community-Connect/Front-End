@@ -5,7 +5,7 @@ const BlockContact = () => {
     {
       icon: "/images/icon/icon_147.svg",
       title: "Our Address",
-      content: "1012 Pebda Parkway, Mirpur 2 Dhaka, Bangladesh",
+      content: "Canton, MI",
       delay: "100",
     },
     {
@@ -19,9 +19,9 @@ const BlockContact = () => {
       icon: "/images/icon/icon_149.svg",
       title: "Live Support",
       content: "live chat service",
-      link: "www.janolivechat.com",
+      link: "www.cantoncummunityconnect.com",
       delay: "300",
-      link: "www.janolivechat.com",
+      link: "www.cantoncummunityconnect.com",
       delay: "300",
     },
   ];
