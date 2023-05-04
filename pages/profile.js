@@ -37,7 +37,7 @@ const Profile = () => {
                   <h6 className="mt-20">Level: {userData.level}</h6>
                   {["Address", "Phone", "Email", "Role"].map((attr) => {
                     return (
-                      <p className="mt-20">
+                      <p className="mt-20" key={attr}>
                         {attr}: {userData[attr.toLowerCase()]}
                       </p>
                     );
