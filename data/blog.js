@@ -25,8 +25,9 @@ module.exports = [
     tag: "Environment",
     tagStyle: { background: "#FFEAC9" },
     title: "Get Hands-On in the Garden-Summit in the Park.",
-    description: "LEARNING AND TEACHING BY GARDENING\n" +
-        "All green thumbs begin as brown thumbs who keep at it! Join Washtenaw Parks staff, MSU Extension Master Gardener Volunteers, and other learners (with thumbs of every color) to Get Hands-on in the Gardens. Level-up your gardening skills in the best way possible: by actively gardening as part of a community of gardeners sharing their skills (and sometimes free flower divisions!).",
+    description:
+      "LEARNING AND TEACHING BY GARDENING\n" +
+      "All green thumbs begin as brown thumbs who keep at it! Join Washtenaw Parks staff, MSU Extension Master Gardener Volunteers, and other learners (with thumbs of every color) to Get Hands-on in the Gardens. Level-up your gardening skills in the best way possible: by actively gardening as part of a community of gardeners sharing their skills (and sometimes free flower divisions!).",
     imageSrc: "/images/opportunities/Plant-service.jpeg",
     delay: "100",
   },
@@ -35,7 +36,8 @@ module.exports = [
     tag: "Hunger",
     tagStyle: { background: "#C9F0FF" },
     title: "Bagging, sorting, and counting meals before distribution- Canton",
-    description: "The Retired & Senior Volunteer Program (RSVP) is looking for volunteers to help with various roles at an organization that works to help older adults with food security. ",
+    description:
+      "The Retired & Senior Volunteer Program (RSVP) is looking for volunteers to help with various roles at an organization that works to help older adults with food security. ",
     imageSrc: "/images/opportunities/food-service.jpeg",
     delay: "200",
   },
@@ -44,7 +46,8 @@ module.exports = [
     tag: "Children",
     tagStyle: { background: "#FFEAEA" },
     title: "Canton Clean-Up Day",
-    description: "Clean-Up Day events provide an opportunity for residents to safely dispose of and recycle many household items including electronics, household hazardous waste, bulky waste, appliances, and scrap tires. Volunteers help by either directing event attendees to the correct stations or helping to unload items from residents’ vehicles like electronics and scrap tires. Learn more about Clean-Up Days at washtenaw.org/cleanup.",
+    description:
+      "Clean-Up Day events provide an opportunity for residents to safely dispose of and recycle many household items including electronics, household hazardous waste, bulky waste, appliances, and scrap tires. Volunteers help by either directing event attendees to the correct stations or helping to unload items from residents’ vehicles like electronics and scrap tires. Learn more about Clean-Up Days at washtenaw.org/cleanup.",
     imageSrc: "/images/opportunities/Clean-service.jpeg",
     delay: "100",
   },
@@ -53,7 +56,8 @@ module.exports = [
     tag: "Children & Youth, Community",
     imageSrc: "/images/opportunities/Clothes-service.jpeg",
     title: "Volunteer to help pack charity kits & organize supplies",
-    description: "Looking for ways to help people in need? CCO send out reusable period kits and hygiene products to homeless, low income & people just in a tough spot.",
+    description:
+      "Looking for ways to help people in need? CCO send out reusable period kits and hygiene products to homeless, low income & people just in a tough spot.",
     date: "23 Apr, 2022",
     delay: "100",
   },
@@ -202,12 +206,11 @@ module.exports = [
   },
   {
     id: 28,
-    image: "url(/images/blog/blog_img_07.jpg)",
-    imageSrc: "/images/blog/blog_img_07.jpg",
+    image: "url(/images/opportunities/Plant-service.jpeg)",
+    imageSrc: "/images/opportunities/Plant-service.jpeg",
     logo: "/images/logo/Plogo-32.png",
     icon: "/images/icon/icon_87.svg",
-    title:
-      "Seattle Opera Simplifies Performance Planning with deski eSignature.",
+    title: "Children & Youth, Community",
     videoId: "Vsq1_kewchQ",
   },
   {

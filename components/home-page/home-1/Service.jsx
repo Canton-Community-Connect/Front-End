@@ -12,7 +12,7 @@ const services = [
     delayAnim: 100,
   },
   {
-    icon: "images/icon/icon_106.svg",
+    icon: "images/icon/icon_104.svg",
     title: "Community",
     delayAnim: 200,
   },
@@ -22,7 +22,7 @@ const services = [
     delayAnim: 300,
   },
   {
-    icon: "images/icon/icon_107.svg",
+    icon: "images/icon/icon_104.svg",
     title: "Human Rights",
     delayAnim: 0,
   },
@@ -32,7 +32,7 @@ const services = [
     delayAnim: 100,
   },
   {
-    icon: "images/icon/icon_107.svg",
+    icon: "images/icon/icon_104.svg",
     title: "Animals",
     delayAnim: 200,
   },

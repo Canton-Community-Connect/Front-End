@@ -28,7 +28,7 @@ const Hero1 = () => {
               today.
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
-              Discover local volunteering opportunities with our app!
+              Discover local events and volunteering opportunities with our app!
             </p>
             <form
               className="search-area d-md-inline-flex m-auto"
