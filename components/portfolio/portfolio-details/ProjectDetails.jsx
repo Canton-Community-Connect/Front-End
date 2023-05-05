@@ -5,18 +5,6 @@ const ProjectDetails = ({details}) => {
 
     return (
         <>
-            <div className="col-12 mb-35">
-                <div className="pt-title fw-bold tx-dark text-uppercase">Date</div>
-                <div className="pt-text">{details.date}</div>
-            </div>
-            {/* End .col-12 */}
-
-            <div className="col-12 mb-35">
-                <div className="pt-title fw-bold tx-dark text-uppercase">
-                    Title
-                </div>
-                <div className="pt-text">{details.title}</div>
-            </div>
             {/* End .col-12 */}
 
             <div className="col-12 mb-35">
@@ -24,6 +12,18 @@ const ProjectDetails = ({details}) => {
                     Cause
                 </div>
                 <div className="pt-text">{details.cause}</div>
+            </div>
+
+            <div className="col-12 mb-35">
+                <div className="pt-title fw-bold tx-dark text-uppercase">When</div>
+                <div className="pt-text">{details.date}</div>
+            </div>
+
+            <div className="col-12 mb-35">
+                <div className="pt-title fw-bold tx-dark text-uppercase">
+                    Where
+                </div>
+                <div className="pt-text">{details.location}</div>
             </div>
 
             <div className="col-12 mb-35">

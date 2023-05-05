@@ -9,26 +9,12 @@ const Footer = () => {
       // TODO: Update with routes
       items: [
         { label: "Home", href: "/" },
-        { label: "Volunteer Opportunities", href: "/opportunity/search" },
+        { label: "Opportunities", href: "/opportunity/search" },
         { label: "Events", href: "/opportunity/search" },
         { label: "About Us", href: "/pages-menu/about-us-v1" },
         { label: "Contact", href: "/contact" },
-        // { label: "Blog", href: "/blog-v2." },
       ],
     },
-    // {
-    //   id: 2,
-    //   title: "Services",
-    //   column: "col-lg-3 col-md-4 col-sm-6 mb-30",
-    //   items: [
-    //     { label: "Health Insurance Plans", href: "/service-details" },
-    //     { label: "Car Insurance", href: "/service-details" },
-    //     { label: "Investment", href: "/service-details" },
-    //     { label: "Mediclaim Policy", href: "/service-details" },
-    //     { label: "Others", href: "/service-details" },
-    //     { label: "Health Insurance", href: "/service-details" },
-    //   ],
-    // },
   ];
 
   const socialIcons = [

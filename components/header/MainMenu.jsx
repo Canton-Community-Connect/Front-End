@@ -154,7 +154,7 @@ const MainMenu = () => {
                             <div
                                 className="nav-link dropdown-toggle"
                             >
-                                Volunteer Opportunities
+                                Opportunities
                             </div>
                         </Link>
                         <ul className="dropdown-menu">

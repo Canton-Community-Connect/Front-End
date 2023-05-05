@@ -20,6 +20,7 @@ module.exports = [
         contactInfo:"",
         tag: "tech",
         delay: "100",
+        time_slots: ["1PM-4PM", "4PM-7PM"]
     },
     {
         id: 2,
@@ -41,5 +42,6 @@ module.exports = [
         contactInfo:"",
         tag: "health",
         delay: "100",
+        time_slots: ["1PM-4PM", "4PM-7PM"]
     }
 ];
