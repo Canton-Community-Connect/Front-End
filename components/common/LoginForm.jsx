@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { signInUser } from "../../store/user";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
 const LoginForm = () => {
+  const user = useSelector((state) => state.user.email);
+  const dispatch = useDispatch();
+  const router = useRouter();
+
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const dispatch = useDispatch();
-  const router = useRouter();
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [router, user]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,7 +25,6 @@ const LoginForm = () => {
         email,
       })
     );
-    router.push("/opportunity/search");
   };
 
   const handleTogglePassword = () => {

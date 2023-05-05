@@ -80,6 +80,7 @@ export const blogItems = [
   { link: "/blog/sub/health-care", text: "Health care" },
   { link: "/blog/sub/community", text: "Community" },
   { link: "/blog/sub/edu", text: "Education/Literacy" },
+  { link: "/login", text: "Account" },
 ];
 
 export const navItems = [

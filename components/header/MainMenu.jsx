@@ -1,15 +1,5 @@
 import Link from "next/link";
-import {
-  menuItems,
-  pagesItems,
-  portfolioItems,
-  blogItems,
-} from "../../data/menu";
-import {
-  isActiveLink,
-  isActiveParent,
-  isActiveParentChaild,
-} from "../../utils/linkActiveChecker";
+import { blogItems } from "../../data/menu";
 
 import { useRouter } from "next/router";
 
@@ -195,6 +185,11 @@ const MainMenu = () => {
           <li className="nav-item">
             <Link className="nav-link" href="/contact" role="button">
               Contact
+            </Link>
+          </li>
+          <li className="nav-item d-lg-none">
+            <Link className="nav-link" href="/login" role="button">
+              My Account
             </Link>
           </li>
           {/* End li (contact) */}

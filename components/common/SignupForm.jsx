@@ -1,12 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { signUpUser } from "../../store/user";
+import { useRouter } from "next/router";
 
 const SignupForm = () => {
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.user.email);
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [router, user]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // handle form submission
+    dispatch(signUpUser({ name, email }));
   };
 
   const handleTogglePassword = () => {
@@ -27,7 +43,12 @@ const SignupForm = () => {
         <div className="col-12">
           <div className="input-group-meta mb-25">
             <label>Name</label>
-            <input type="text" placeholder="Rashed Kabir" />
+            <input
+              type="text"
+              placeholder="Rashed Kabir"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
         </div>
         {/* End .col-12 */}
@@ -35,7 +56,13 @@ const SignupForm = () => {
         <div className="col-12">
           <div className="input-group-meta mb-30">
             <label>Email</label>
-            <input type="email" placeholder="hasan@gmail.com" required />
+            <input
+              type="email"
+              placeholder="hasan@gmail.com"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
         </div>
         {/* End .col-12 */}
@@ -48,6 +75,8 @@ const SignupForm = () => {
               placeholder="Password"
               className="pass_log_id"
               required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <span className="placeholder_icon" onClick={handleTogglePassword}>
               <span className=" d-flex align-items-center">
@@ -74,6 +103,8 @@ const SignupForm = () => {
               placeholder="Confirm Password"
               className="pass_log_id"
               required
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <span
               className="placeholder_icon"
