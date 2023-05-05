@@ -44,7 +44,7 @@ const DefaulHeader = () => {
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
             <Link
                 href="/opportunity/create-event"
-                className="btn-twentyTwo fw-500 tran3s"
+                className="btn-twentyTwo fw-500 tran3s me-3"
                 data-aos="fade-left"
             >
               Create Event
