@@ -19,9 +19,9 @@ const BlockContact = () => {
       icon: "/images/icon/icon_149.svg",
       title: "Live Support",
       content: "live chat service",
-      link: "www.cantoncummunityconnect.com",
+      link: "www.cantonconnect.com",
       delay: "300",
-      link: "www.cantoncummunityconnect.com",
+      link: "www.cantonconnect.com",
       delay: "300",
     },
   ];

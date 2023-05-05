@@ -9,8 +9,8 @@ const Footer = () => {
       // TODO: Update with routes
       items: [
         { label: "Home", href: "/" },
-        { label: "Volunteer Opportunities", href: "/" },
-        { label: "Events", href: "/" },
+        { label: "Volunteer Opportunities", href: "/opportunity/search" },
+        { label: "Events", href: "/opportunity/search" },
         // { label: "Careers", href: "#" },
         // { label: "Features", href: "#" },
         // { label: "Blog", href: "/blog-v2." },
