@@ -175,7 +175,7 @@ const MainMenu = () => {
           <li className="nav-item">
             <Link
               className="nav-link"
-              href="/pages-menu/about-us-v1"
+              href="/about-us"
               role="button"
             >
               About Us
