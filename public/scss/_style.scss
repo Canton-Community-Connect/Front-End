@@ -101,9 +101,9 @@ ul.form-stepper > li:not(:last-of-type) {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
