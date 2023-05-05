@@ -1,83 +1,86 @@
 import Link from "next/link";
 import {
-    menuItems,
-    pagesItems,
-    portfolioItems,
-    blogItems,
+  menuItems,
+  pagesItems,
+  portfolioItems,
+  blogItems,
 } from "../../data/menu";
 import {
-    isActiveLink,
-    isActiveParent,
-    isActiveParentChaild,
+  isActiveLink,
+  isActiveParent,
+  isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
 
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const MainMenu = () => {
-    const router = useRouter();
-    return (
-        <nav className="navbar navbar-expand-lg order-lg-2">
-            <button
-                className="navbar-toggler d-block d-lg-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+  const router = useRouter();
+  return (
+    <nav className="navbar navbar-expand-lg order-lg-2">
+      <button
+        className="navbar-toggler d-block d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span />
+      </button>
+      {/* End mobile collapse menu */}
+
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="d-block d-lg-none">
+            <div className="logo">
+              <Link href="/" className="d-block">
+                <img src="/images/logo/logo_01.png" alt="" width={95} />
+              </Link>
+            </div>
+          </li>
+          {/* End li */}
+
+          <li className="nav-item dropdown mega-dropdown-md ">
+            <Link className="nav-link" href="/" role="button">
+              Home
+            </Link>
+            {/* <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
             >
-                <span/>
-            </button>
-            {/* End mobile collapse menu */}
-
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="d-block d-lg-none">
-                        <div className="logo">
-                            <Link href="/" className="d-block">
-                                <img src="/images/logo/logo_01.png" alt="" width={95}/>
-                            </Link>
-                        </div>
-                    </li>
-                    {/* End li */}
-
-                    <li className="nav-item dropdown mega-dropdown-md active">
-                        <a
-                            className="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside"
-                            aria-expanded="false"
-                        >
-                            Home
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li>
-                                <div className="row">
-                                    {menuItems.map((menu, index) => (
-                                        <div className="col-lg-4" key={index}>
-                                            <div className="menu-column">
-                                                <h6 className="mega-menu-title">{menu.title}</h6>
-                                                <ul className="style-none mega-dropdown-list">
-                                                    {menu.items.map((item, index) => (
-                                                        <li key={index}>
-                                                            <Link href={item.link} className="dropdown-item">
-                                                                <span>{item.title}</span>
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
+              Home
+            </a> */}
+            {/* <ul className="dropdown-menu">
+              <li>
+                <div className="row">
+                  {menuItems.map((menu, index) => (
+                    <div className="col-lg-4" key={index}>
+                      <div className="menu-column">
+                        <h6 className="mega-menu-title">{menu.title}</h6>
+                        <ul className="style-none mega-dropdown-list">
+                          {menu.items.map((item, index) => (
+                            <li key={index}>
+                              <Link href={item.link} className="dropdown-item">
+                                <span>{item.title}</span>
+                              </Link>
                             </li>
+                          ))}
                         </ul>
-                    </li>
-                    {/* End li (home mega menu) */}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </li>
+            </ul> */}
+          </li>
+          {/* End li (home mega menu) */}
 
-                    {/*  <li className="nav-item  dropdown">
+          {/*  <li className="nav-item  dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -124,9 +127,9 @@ const MainMenu = () => {
               </li>
             </ul>
           </li>*/}
-                    {/* End li (pages) */}
+          {/* End li (pages) */}
 
-                    {/* <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -147,73 +150,71 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>*/}
-                    {/* End li (portfolio) */}
+          {/* End li (portfolio) */}
 
-                    <li className="nav-item dropdown">
-                        <Link href="/opportunity/search">
-                            <div
-                                className="nav-link dropdown-toggle"
-                            >
-                                Volunteer Opportunities
-                            </div>
-                        </Link>
-                        <ul className="dropdown-menu">
-                            {blogItems.map((blog, index) => (
-                                <li key={index}>
-                                    <Link href={blog.link} className="dropdown-item">
-                                        <span>{blog.text}</span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <Link href="/opportunity/search">
-                            <div
-                                className="nav-link dropdown-toggle"
-                            >
-                                Events
-                            </div>
-                        </Link>
-                        <ul className="dropdown-menu">
-                            {blogItems.map((blog, index) => (
-                                <li key={index}>
-                                    <Link href={blog.link} className="dropdown-item">
-                                        <span>{blog.text}</span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                    {/* End li (blog) */}
+          <li className="nav-item dropdown">
+            <Link href="/opportunity/search">
+              <div className="nav-link dropdown-toggle">
+                Volunteer Opportunities
+              </div>
+            </Link>
+            <ul className="dropdown-menu">
+              {blogItems.map((blog, index) => (
+                <li key={index}>
+                  <Link href={blog.link} className="dropdown-item">
+                    <span>{blog.text}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li className="nav-item dropdown">
+            <Link href="/opportunity/search">
+              <div className="nav-link dropdown-toggle">Events</div>
+            </Link>
+            <ul className="dropdown-menu">
+              {blogItems.map((blog, index) => (
+                <li key={index}>
+                  <Link href={blog.link} className="dropdown-item">
+                    <span>{blog.text}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+          {/* End li (blog) */}
 
-                    <li className="nav-item">
-                        <Link className="nav-link" href="/pages-menu/about-us-v1" role="button">
-                            About Us
-                        </Link>
-                    </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              href="/pages-menu/about-us-v1"
+              role="button"
+            >
+              About Us
+            </Link>
+          </li>
 
-                    <li className="nav-item">
-                        <Link className="nav-link" href="/contact" role="button">
-                            Contact
-                        </Link>
-                    </li>
-                    {/* End li (contact) */}
-                </ul>
-                {/* End ul */}
+          <li className="nav-item">
+            <Link className="nav-link" href="/contact" role="button">
+              Contact
+            </Link>
+          </li>
+          {/* End li (contact) */}
+        </ul>
+        {/* End ul */}
 
-                {/* Mobile Content */}
-                <div className="mobile-content d-block d-lg-none">
-                    <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-                        <Link href="/contact" className="btn-twentyOne fw-500 tran3s">
-                            Create Event
-                        </Link>
-                    </div>
-                </div>
-                {/* /.mobile-content */}
-            </div>
-        </nav>
-    );
+        {/* Mobile Content */}
+        <div className="mobile-content d-block d-lg-none">
+          <div className="d-flex flex-column align-items-center justify-content-center mt-70">
+            <Link href="/contact" className="btn-twentyOne fw-500 tran3s">
+              Create Event
+            </Link>
+          </div>
+        </div>
+        {/* /.mobile-content */}
+      </div>
+    </nav>
+  );
 };
 
 export default MainMenu;
