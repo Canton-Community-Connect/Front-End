@@ -42,14 +42,13 @@ const DefaulHeader = () => {
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            {user.email && (
-              <Link
-                href="/contact"
-                className="btn-twentyOne fw-500 tran3s d-none d-lg-block me-3"
-              >
-                Create Event
-              </Link>
-            )}
+            <Link
+                href="/opportunity/create-event"
+                className="btn-twentyTwo fw-500 tran3s"
+                data-aos="fade-left"
+            >
+              Create Event
+            </Link>
             <Link
               href="/login"
               className="login-btn-three rounded-circle tran3s "

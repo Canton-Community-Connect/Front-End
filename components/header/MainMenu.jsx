@@ -154,7 +154,25 @@ const MainMenu = () => {
                             <div
                                 className="nav-link dropdown-toggle"
                             >
-                                Opportunities
+                                Volunteer Opportunities
+                            </div>
+                        </Link>
+                        <ul className="dropdown-menu">
+                            {blogItems.map((blog, index) => (
+                                <li key={index}>
+                                    <Link href={blog.link} className="dropdown-item">
+                                        <span>{blog.text}</span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <Link href="/opportunity/search">
+                            <div
+                                className="nav-link dropdown-toggle"
+                            >
+                                Events
                             </div>
                         </Link>
                         <ul className="dropdown-menu">

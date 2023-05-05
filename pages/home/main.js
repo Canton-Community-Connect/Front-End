@@ -65,9 +65,11 @@ const Main = () => {
               >
                 View all opportunities
               </Link>
+
             </div>
           </div>
         </div>
+
         {/* /.container */}
       </div>
       {/* <!-- /.fancy-feature-thirtyFour --> */}
