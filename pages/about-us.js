@@ -1,14 +1,14 @@
-import Seo from "../../components/common/Seo";
-import DefaulHeader from "../../components/header/DefaulHeader";
-import DefaultFooter from "../../components/footer/DefaultFooter";
-import Partners from "../../components/services/Partners";
-import Faq from "../../components/services/Faq";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Block from "../../components/services/Block";
-import Team3 from "../../components/team/Team3";
+import Seo from "../components/common/Seo";
+import DefaulHeader from "../components/header/DefaulHeader";
+import DefaultFooter from "../components/footer/DefaultFooter";
+import Partners from "../components/services/Partners";
+import Faq from "../components/services/Faq";
+import Testimonial from "../components/home-page/home-3/Testimonial";
+import Block from "../components/services/Block";
+import Team3 from "../components/team/Team3";
 import Link from "next/link";
-import VideoBlock from "../../components/about/VideoBlock";
-import Counter from "../../components/about/Counter";
+import VideoBlock from "../components/about/VideoBlock";
+import Counter from "../components/about/Counter";
 
 const AboutUsV1 = () => {
   const features = [
@@ -29,17 +29,17 @@ const AboutUsV1 = () => {
     <>
       <Seo pageTitle="About Us V1" />
 
-      {/* <!-- 
+      {/* <!--
       =============================================
       Theme Default Menu
-      ============================================== 	
+      ==============================================
       --> */}
       <DefaulHeader />
 
-      {/* 
+      {/*
 			=============================================
 				Feature Section Fifty One
-			============================================== 
+			==============================================
 			*/}
       <div className="fancy-feature-fiftyOne position-relative mt-200">
         <div className="container">
@@ -88,19 +88,19 @@ const AboutUsV1 = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      {/* <!-- 
+      {/* <!--
 			=============================================
 				Feature Section Fifty Two
-			============================================== 
+			==============================================
 			--> */}
       <VideoBlock />
 
       {/* <!-- /.fancy-feature-fiftyTwo --> */}
 
-      {/* 
+      {/*
 			=============================================
 				Feature Section Thirty Seven
-			============================================== 
+			==============================================
 			*/}
       <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
         <div className="container">
@@ -228,10 +228,10 @@ const AboutUsV1 = () => {
       </div>
       {/* /.feedback-section-eleven */}
 
-      {/* 
+      {/*
 			=============================================
 				Feature Section Thirty Eight
-			============================================== 
+			==============================================
 			*/}
       <div className="fancy-feature-thirtyEight mt-180 lg-mt-120">
         <div className="container">
@@ -330,10 +330,10 @@ const AboutUsV1 = () => {
       </div>
       {/* /.fancy-short-banner-sixteen */}
 
-      {/* 
+      {/*
         =============================================
         Contact Section One
-        ============================================== 
+        ==============================================
         */}
       <DefaultFooter />
     </>
