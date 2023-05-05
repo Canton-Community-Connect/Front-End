@@ -1,10 +1,11 @@
 import DefaulHeader from "../components/header/DefaulHeader";
 import Seo from "../components/common/Seo";
-import Blog from "../components/home-page/home-8/Blog";
 import CampaignBlock from "../components/home-page/home-4/CampaignBlock";
-
-import Link from "next/link";
 import Features from "../components/home-page/home-4/Features";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+
 const userData = {
   firstName: "Bob",
   lastName: "Bobbington",
@@ -17,6 +18,15 @@ const userData = {
 };
 
 const Profile = () => {
+  const router = useRouter();
+  const user = useSelector((state) => state.user.email);
+
+  useEffect(() => {
+    if (!user) {
+      router.push("/login");
+    }
+  }, [router, user]);
+
   return (
     <>
       <Seo pageTitle="Profile" />

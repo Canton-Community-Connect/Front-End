@@ -7,6 +7,7 @@ const SignupForm = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.email);
   const router = useRouter();
+
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [password, setPassword] = useState("");

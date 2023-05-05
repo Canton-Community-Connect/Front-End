@@ -188,7 +188,7 @@ const MainMenu = () => {
             </Link>
           </li>
           <li className="nav-item d-lg-none">
-            <Link className="nav-link" href="/login" role="button">
+            <Link className="nav-link" href="/profile" role="button">
               My Account
             </Link>
           </li>
@@ -199,7 +199,10 @@ const MainMenu = () => {
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-            <Link href="/contact" className="btn-twentyOne fw-500 tran3s">
+            <Link
+              href="/opportunity/create-event"
+              className="btn-twentyOne fw-500 tran3s"
+            >
               Create Event
             </Link>
           </div>
