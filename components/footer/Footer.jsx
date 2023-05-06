@@ -10,7 +10,6 @@ const Footer = () => {
       items: [
         { label: "Home", href: "/" },
         { label: "Opportunities", href: "/opportunity/search" },
-        { label: "Events", href: "/opportunity/search" },
         { label: "About Us", href: "/pages-menu/about-us-v1" },
         { label: "Contact", href: "/contact" },
       ],
