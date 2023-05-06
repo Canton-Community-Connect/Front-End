@@ -128,6 +128,40 @@ const SignupForm = () => {
         {/* End .col-12 */}
 
         <div className="col-12">
+          <div className="input-group-meta mb-30">
+            <label>Age</label>
+            <input
+                type="number"
+                placeholder="Age"
+                min ="15"
+                required
+            />
+          </div>
+        </div>
+
+        <div className="col-12">
+          <div className="input-group-meta mb-30">
+            <label>Phone Num</label>
+            <input
+                type="text"
+                placeholder="Phone Num"
+                required
+            />
+          </div>
+        </div>
+
+        <div className="col-12">
+          <div className="input-group-meta mb-30">
+            <label>Address</label>
+            <input
+                type="text"
+                placeholder="Address"
+                required
+            />
+          </div>
+        </div>
+
+        <div className="col-12">
           <div className="agreement-checkbox d-flex justify-content-between align-items-center">
             <div>
               <input type="checkbox" id="agree_to_policy" />

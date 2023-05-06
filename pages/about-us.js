@@ -58,14 +58,27 @@ const AboutUsV1 = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-9 ms-auto">
               <div className="ps-xxl-5" data-aos="fade-left">
-                <h6 className="mb-30">Our History &amp; Goal.</h6>
+                <h6 className="mb-30">Mission</h6>
                 <p className="text-lg tx-dark">
-                  Many Canton residents are unaware of local volunteering
-                  opportunities, leading to a lack of diversity in volunteering
-                  efforts. Our app aims to address this issue by connecting
-                  residents with resources, events, and incentives to encourage
-                  broader participation and community involvement.
+                  Our mission is to connect Canton residents with local volunteering opportunities, resources, and events while promoting community involvement and engagement.
                 </p>
+                <div className="row">{/* <Counter /> */}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-xl-8 col-lg-9 ms-auto">
+              <div className="ps-xxl-5" data-aos="fade-left">
+                <h6 className="mb-30">Goals</h6>
+                <p className="text-lg tx-dark">
+                  <ul>
+                    <li>To increase awareness of volunteering opportunities in Canton and encourage broader participation in community efforts.</li>
+                    <li>To provide an easy-to-use platform for residents to discover and participate in local events and resources.</li>
+                    <li>To foster a stronger sense of community involvement and engagement among Canton residents.</li>
+                    <li>To track and report on the impact of the app on the community, including the number of users, volunteer hours logged, and events attended.</li>
+                  </ul>
+                   </p>
                 <div className="row">{/* <Counter /> */}</div>
               </div>
             </div>
@@ -84,66 +97,8 @@ const AboutUsV1 = () => {
           className="lazy-img shapes shape-two"
         />
       </div>
-      {/* /.fancy-feature-fiftyOne */}
 
-      {/* <!--
-			=============================================
-				Feature Section Fifty Two
-			==============================================
-			--> */}
-      <VideoBlock />
 
-      {/* <!-- /.fancy-feature-fiftyTwo --> */}
-
-      {/*
-			=============================================
-				Feature Section Thirty Seven
-			==============================================
-			*/}
-      {/*
-      <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="block-style-four pe-xxl-5 me-xxl-4 md-mb-70"
-                data-aos="fade-right"
-              >
-                <div className="title-style-six">
-                  <div className="sc-title-two text-uppercase">WHY US</div>
-                  <h2 className="main-title fw-500 tx-dark">
-                    Everything with Marketing.
-                  </h2>
-                </div>
-                <p className="fs-20 pt-20 pb-30 lg-pt-10 lg-pb-20">
-                  Turn your business into a sales machine today with lorem
-                  Things go wrong have questions.
-                </p>
-                <ul className="style-none list-item">
-                  {features.map((feature, index) => (
-                    <li key={index}>{feature.text}</li>
-                  ))}
-                </ul>
-                <div className="d-inline-flex align-items-center mt-35 lg-mt-20">
-                  <ul className="d-flex style-none rating">{starRating}</ul>
-                  <div className="fs-20 ms-2">
-                    <strong className="fw-500 tx-dark">4.8</strong>
-                    <span className="tx-dark fs-16 opacity-50">
-                      (30k Reviews)
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-     
-
-            <div className="col-xxl-5 col-lg-6 ms-auto">
-              <Block />
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* /.fancy-feature-thirtySeven */}
 
       {/*
 			=====================================================

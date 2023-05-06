@@ -28,7 +28,7 @@ const index = () => {
           </div>
           {/* End .row */}
           <p className="copyright text-center pt-30 m0">
-            © 2010 - {currentYear} jano inc.
+            © 2010 - {currentYear} Canton Beta Tech
           </p>
         </div>
         {/* /.inner-wrapper */}
