@@ -1,21 +1,21 @@
 const accordionItems = [
   {
     id: 1,
-    title: "Google ads setup & management",
+    title: "Bringing Communities Closer",
     content:
-      "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering teams at Facebook.",
+      "Our goal is to use this app as a means of bringing communities closer through volunteering and events.",
   },
   {
     id: 2,
-    title: "Web Design & Development",
+    title: "Incentivizing Volunteer Efforts",
     content:
-      "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering teams at Facebook.",
+      "Help community members earn rewards for their volunteering efforts.",
   },
   {
     id: 3,
-    title: "Reputation management",
+    title: "Foster Local Initiatives",
     content:
-      "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering teams at Facebook.",
+      "We empower communities to shape their own future by promoting local initiatives",
   },
 ];
 
