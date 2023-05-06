@@ -60,7 +60,9 @@ const AboutUsV1 = () => {
               <div className="ps-xxl-5" data-aos="fade-left">
                 <h6 className="mb-30">Mission</h6>
                 <p className="text-lg tx-dark">
-                  Our mission is to connect Canton residents with local volunteering opportunities, resources, and events while promoting community involvement and engagement.
+                  Our mission is to connect Canton residents with local
+                  volunteering opportunities, resources, and events while
+                  promoting community involvement and engagement.
                 </p>
                 <div className="row">{/* <Counter /> */}</div>
               </div>
@@ -80,8 +82,6 @@ const AboutUsV1 = () => {
           className="lazy-img shapes shape-two"
         />
       </div>
-
-
 
       {/*
 			=====================================================
@@ -104,7 +104,6 @@ const AboutUsV1 = () => {
               <ul>
                 <Team3 />
               </ul>
-
             </div>
             {/* /.row */}
 
@@ -136,7 +135,6 @@ const AboutUsV1 = () => {
         />
       </div>
 
-
       <div className="fancy-feature-thirtyEight mt-180 lg-mt-120">
         <div className="container">
           <div className="row">
@@ -156,7 +154,6 @@ const AboutUsV1 = () => {
             </div>
           </div>
         </div>
-
       </div>
       {/* /.partner-section-six */}
 
