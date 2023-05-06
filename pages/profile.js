@@ -10,7 +10,7 @@ const userData = {
   firstName: "Shadi",
   lastName: "Banitaan",
   level: 200,
-  address: "123 Canton Center",
+  address: "123 Canton Center Rd",
   phone: "313-313-3133",
   email: "shadi@email.com",
   role: "Events Organizer",
