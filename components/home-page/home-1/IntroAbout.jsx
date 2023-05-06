@@ -71,7 +71,7 @@ const IntroAbout = () => {
               width={561}
               height={732}
               layout="intrinsic"
-              src="/images/media/img_53.png"
+              src="/images/media/image53.jpeg"
               className=" avatar-img"
               alt="man"
             />
