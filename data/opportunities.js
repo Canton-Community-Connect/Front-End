@@ -16,7 +16,7 @@ module.exports = [
             "Able to lift bags",
         categories: ["tech"],
         title: "Get Hands-On in the Garden-Summit in the Park.",
-        details: "We are looking for volunteers to help clean up the Summit in the Park common area. Help in moving trash bags, and clean the area around the central lake.",
+        details: "Volunteers are needed to assist with cleaning up the common area at Summit in the Park. Tasks will include moving trash bags and cleaning the vicinity around the central lake.",
         contactInfo:"",
         tag: "tech",
         delay: "100",

@@ -9,7 +9,7 @@ const CampaignBlock = () => {
       ribbonBg: "#FF3F64",
       title: "Animal Shelter",
       description:
-        "Looking for a new adoption home for a local kitten who's owner is relocating out of country.",
+        "A local kitten needs a new home as its owner is relocating out of the country. We are searching for a loving family to adopt the kitten.",
       aosDelay: "100",
     },
     {
@@ -29,7 +29,7 @@ const CampaignBlock = () => {
       ribbonBg: "#00E38A",
       title: "Senior Care",
       description:
-        "Looking for a few volunteers to help moving furniture for a local senior member of the Canton community.",
+        "We are seeking a small group of volunteers to assist with furniture relocation for a senior member of the Canton community.",
       aosDelay: "300",
     },
     {
@@ -39,7 +39,7 @@ const CampaignBlock = () => {
       ribbonBg: "#FFBA3C",
       title: "Community Cleanup",
       description:
-        "Looking for a few volunteers to clean the detch on Palmer and Haggerty roads",
+        "We are in need of several volunteers to clean up the ditch on Palmer and Haggerty roads.",
       aosDelay: "400",
     },
   ];
