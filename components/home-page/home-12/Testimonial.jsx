@@ -27,7 +27,7 @@ const Testimonial = () => {
         "We’v 9,000 agents around the country, Find agents near your neighborhood.",
     },
     {
-      name: "Rashed Kabir",
+      name: "You name",
       location: "California",
       feedback:
         "We’v 9,000 agents around the country, Find agents near your neighborhood.",

@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Rashed Kabir",
+    name: "You name",
     role: "Designer",
     imgSrc: "/images/team/img_06.jpg",
   },
@@ -39,7 +39,7 @@ const teamMembers = [
   },
   {
     id: 7,
-    name: "Rashed Kabir",
+    name: "You name",
     role: "Designer",
     imgSrc: "/images/team/img_14.jpg",
   },

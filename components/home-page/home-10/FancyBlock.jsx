@@ -41,7 +41,7 @@ const FancyBlock = () => {
     ),
     subtitle:
       "Auis nostrud exercitation ullamco labors nis slit alquip Duis aute irure dolor in reprehen erio isu voluptate velit sed.",
-    author: "Rashed Kabir",
+    author: "You name",
     authorTitle: "CEO Janu",
   };
 

@@ -16,7 +16,7 @@ const Testimonial = () => {
     {
       id: 1,
       text: "Having a home based business is a wonderful asset to your life. The problem still stands it comes timeadvertise your business for a cheap cost. I know you have looked answer everywhere.",
-      name: "Rashed kabir",
+      name: "You name",
       role: "Designer",
     },
     {

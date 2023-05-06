@@ -3,7 +3,7 @@ import Image from "next/image";
 const teamData = [
   {
     id: 1,
-    name: "Rashed Kabir",
+    name: "You name",
     position: "UI Designer",
     imgSrc: "/images/team/img_08.jpg",
     socialLinks: [
@@ -51,7 +51,7 @@ const teamData = [
   },
   {
     id: 5,
-    name: "Rashed Kabir",
+    name: "You name",
     position: "UI Designer",
     imgSrc: "/images/team/img_08.jpg",
     socialLinks: [

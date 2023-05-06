@@ -10,7 +10,7 @@ const ContactForm = () => {
           <div className="input-group-meta form-group mb-25">
             <input
               type="text"
-              placeholder="Rashed Kabir"
+              placeholder="You name"
               name="name"
               required="required"
               data-error="Name is required."

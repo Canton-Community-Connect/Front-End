@@ -6,7 +6,7 @@ const Testimonial = () => {
     {
       quote:
         "Very easy to set up. I had no experience with hosting before signing up with HostGator but they've made everything seem simple.",
-      author: "Rashed ka.",
+      author: "You name",
       location: "Italy",
     },
     {

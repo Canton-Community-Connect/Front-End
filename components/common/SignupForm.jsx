@@ -46,7 +46,7 @@ const SignupForm = () => {
             <label>Name</label>
             <input
               type="text"
-              placeholder="Rashed Kabir"
+              placeholder="You name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />

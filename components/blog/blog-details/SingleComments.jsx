@@ -8,7 +8,7 @@ const comments = [
     text: "One touch of a red-hot stove is usually all we need to avoid that kind of lorem discomfort in future. The same true we experience",
   },
   {
-    name: "Rashed ka.",
+    name: "You name",
     avatar: "/images/blog/avatar_02.jpg",
     date: "13 June, 2022, 7:30pm",
     text: "One touch of a red-hot stove is usually all we need to avoid that kind of lorem discomfort in future. The same true we experience",

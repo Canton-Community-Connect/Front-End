@@ -2,7 +2,7 @@ module.exports = [
   {
     id: 1,
     imgSrc: "/images/media/img_63.jpg",
-    instructor: "Rashed Ka.",
+    instructor: "You name",
     duration: "53m",
     title: "Master in Design System in Figam & Sketch",
     rating: 4,
@@ -26,7 +26,7 @@ module.exports = [
   {
     id: 3,
     imgSrc: "/images/media/img_65.jpg",
-    instructor: "Rashed Ka.",
+    instructor: "You name",
     duration: "53m",
     title: "Master in Design System in Figam & Sketch",
     rating: 4,

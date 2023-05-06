@@ -8,7 +8,7 @@ const CommentBox = () => {
     <form action="#" className="mt-30" onSubmit={handleSubmit}>
       <div className="input-wrapper mb-35">
         <label>Name*</label>
-        <input type="text" placeholder="Rashed Kabir" required />
+        <input type="text" placeholder="You name" required />
       </div>
       {/* /.input-wrapper */}
       <div className="input-wrapper mb-40">

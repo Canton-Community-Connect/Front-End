@@ -11,7 +11,7 @@ const items = [
       "We have 9,000 agents around the country. Find agents near your neighborhood.",
   },
   {
-    name: "Rashed ka.",
+    name: "You name",
     location: "Brazil",
     image: "/images/media/img_19.jpg",
     rating: 5,
@@ -35,7 +35,7 @@ const items = [
       "We have 9,000 agents around the country. Find agents near your neighborhood.",
   },
   {
-    name: "Rashed ka.",
+    name: "You name",
     location: "Brazil",
     image: "/images/media/img_19.jpg",
     rating: 5,

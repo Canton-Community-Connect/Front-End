@@ -6,7 +6,7 @@ const courseData = [
   {
     id: 1,
     imgSrc: "/images/media/img_63.jpg",
-    instructor: "Rashed Ka.",
+    instructor: "You name",
     duration: "53m",
     title: "Master in Design System in Figam & Sketch",
     rating: 4,
@@ -30,7 +30,7 @@ const courseData = [
   {
     id: 3,
     imgSrc: "/images/media/img_65.jpg",
-    instructor: "Rashed Ka.",
+    instructor: "You name",
     duration: "53m",
     title: "Master in Design System in Figam & Sketch",
     rating: 4,
