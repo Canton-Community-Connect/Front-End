@@ -66,23 +66,6 @@ const AboutUsV1 = () => {
               </div>
             </div>
           </div>
-
-          <div className="row">
-            <div className="col-xl-8 col-lg-9 ms-auto">
-              <div className="ps-xxl-5" data-aos="fade-left">
-                <h6 className="mb-30">Goals</h6>
-                <p className="text-lg tx-dark">
-                  <ul>
-                    <li>To increase awareness of volunteering opportunities in Canton and encourage broader participation in community efforts.</li>
-                    <li>To provide an easy-to-use platform for residents to discover and participate in local events and resources.</li>
-                    <li>To foster a stronger sense of community involvement and engagement among Canton residents.</li>
-                    <li>To track and report on the impact of the app on the community, including the number of users, volunteer hours logged, and events attended.</li>
-                  </ul>
-                   </p>
-                <div className="row">{/* <Counter /> */}</div>
-              </div>
-            </div>
-          </div>
         </div>
         {/* /.container */}
 
@@ -118,7 +101,10 @@ const AboutUsV1 = () => {
             </div>
             {/* /.row */}
             <div className="row">
-              <Team3 />
+              <ul>
+                <Team3 />
+              </ul>
+
             </div>
             {/* /.row */}
 
@@ -149,31 +135,7 @@ const AboutUsV1 = () => {
           className="lazy-img shapes shape-one d-none d-xl-inline-block"
         />
       </div>
-      {/* /.team-section-two */}
 
-      {/*
-			=====================================================
-				Feedback Section Eleven
-			=====================================================
-			*/}
-      {/* <div
-        className="feedback-section-eleven position-relative mt-10 pt-100 pb-70 lg-pt-70 lg-pb-50"
-        data-aos="fade-up"
-      > */}
-      {/* <div className="container">
-          <div className="title-style-one text-center mb-50 lg-mb-20">
-            <h2 className="main-title fw-500 tx-dark m0">Client Feedback</h2>
-          </div>
-        </div> */}
-      {/* End .container */}
-      {/* <div className="inner-content">
-          <div className="slider-wrapper">
-            <div className="feedback_slider_seven">
-              <Testimonial />
-            </div>
-           </div>
-         </div> */}
-      {/* </div> */}
 
       <div className="fancy-feature-thirtyEight mt-180 lg-mt-120">
         <div className="container">
@@ -185,15 +147,6 @@ const AboutUsV1 = () => {
                   <h2 className="main-title fw-500 tx-dark">Our Goals</h2>
                 </div>
                 {/* /.title-style-ten */}
-                <p className="fs-20 pt-10 pb-30 lg-pb-20">
-                  Want to learn more about the problem and our solution?
-                </p>
-                <div className="btn-eighteen position-relative d-inline-block tx-dark">
-                  <Link href="/page-menu/about-us-v1" className="fw-500 tran3s">
-                    More About solution
-                    <i className="fa-solid fa-angle-right" />
-                  </Link>
-                </div>
               </div>
               {/* /.block-style-seven */}
             </div>
@@ -203,24 +156,7 @@ const AboutUsV1 = () => {
             </div>
           </div>
         </div>
-        {/* /.container */}
 
-        {/* <div className="partner-section-six position-relative mt-130 lg-mt-80">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-5">
-                <h3 className="title tx-dark text-center text-lg-start md-pb-10 m0">
-                  <span>100+</span> Trusted Partners
-                </h3>
-              </div>
-              <div className="col-xl-6 col-lg-7 ms-auto">
-                <div className="logo-wrapper text-center d-flex justify-content-center justify-content-lg-between flex-wrap">
-                  <Partners />
-                </div>
-               </div>
-            </div>
-          </div>
-         </div> */}
       </div>
       {/* /.partner-section-six */}
 
