@@ -9,7 +9,7 @@ const CampaignBlock = () => {
       ribbonBg: "#FF3F64",
       title: "Animal Shelter",
       description:
-        "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
+        "Looking for a new adoption home for a local kitten who's owner is relocating out of country.",
       aosDelay: "100",
     },
     {
@@ -19,7 +19,7 @@ const CampaignBlock = () => {
       ribbonBg: "#FFBA3C",
       title: "Local Garden",
       description:
-        "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
+        "Looking for a few volunteers, preferably local to Canton Memory Care center to help clean up the commons area in the center.",
       aosDelay: "200",
     },
     {
@@ -29,7 +29,7 @@ const CampaignBlock = () => {
       ribbonBg: "#00E38A",
       title: "Senior Care",
       description:
-        "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
+        "Looking for a few volunteers to help moving furniture for a local senior member of the Canton community.",
       aosDelay: "300",
     },
     {
@@ -39,7 +39,7 @@ const CampaignBlock = () => {
       ribbonBg: "#FFBA3C",
       title: "Community Cleanup",
       description:
-        "Lorem ipsum dolor consectetur adipisci. Vivamus in magna tellus fringilla eleifend.",
+        "Looking for a few volunteers to clean the detch on Palmer and Haggerty roads",
       aosDelay: "400",
     },
   ];

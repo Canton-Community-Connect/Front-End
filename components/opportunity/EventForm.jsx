@@ -1,4 +1,4 @@
-const ContactForm = () => {
+const EventForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle form submission
@@ -327,4 +327,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default EventForm;

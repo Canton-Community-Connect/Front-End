@@ -7,12 +7,12 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const userData = {
-  firstName: "Bob",
-  lastName: "Bobbington",
+  firstName: "Shadi",
+  lastName: "Banitaan",
   level: 200,
-  address: "123 Fake Street",
+  address: "123 Canton Center",
   phone: "313-313-3133",
-  email: "Bob@gmail.com",
+  email: "shadi@email.com",
   role: "Events Organizer",
   badges: ["Animal rescuer", "Green thumb"],
 };

@@ -27,7 +27,7 @@ const contact = () => {
                 <h4 className="fw-500 tx-dark">
                   Add Volunteer Opportunity in Canton.
                 </h4>
-                <h6>*Organization account required</h6>
+                <h8>*Organization account required</h8>
               </div>
             </div>
           </div>
