@@ -108,7 +108,7 @@ const ContactForm = () => {
                         <a className="mx-2">
               <span className="form-stepper-circle">
                 <span>
-                  <img src="/images/logo/Plogo-2.png" alt="" width={95}/>
+                  <img src="/images/logo/Plogo11.png" alt="" width={95}/>
                 </span>
               </span>
                             <div className="label">Organization Information</div>
@@ -121,7 +121,7 @@ const ContactForm = () => {
                         <a className="mx-2">
               <span className="form-stepper-circle text-muted">
                 <span>
-                  <img src="/images/logo/Plogo-3.png" alt="" width={95}/>
+                  <img src="/images/logo/Plogo12.png" alt="" width={95}/>
                 </span>
               </span>
                             <div className="label text-muted">Event Details</div>
@@ -134,7 +134,7 @@ const ContactForm = () => {
                         <a className="mx-2">
               <span className="form-stepper-circle text-muted">
                 <span>
-                  <img src="/images/logo/Plogo-4.png" alt="" width={95}/>
+                  <img src="/images/logo/Plogo13.png" alt="" width={95}/>
                 </span>
               </span>
                             <div className="label text-muted">Confirm Details</div>
