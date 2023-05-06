@@ -2,10 +2,10 @@ import Link from "next/link";
 import opportunitiesData from "../../data/opportunities";
 import Image from "next/image";
 
-const OppList = () => {
+const OppList = ({tag}) => {
   return (
     <>
-      {opportunitiesData.slice(0, 4).map((opportunity) => (
+      {opportunitiesData.filter(opp => tag== null || opp.tag == tag).slice(0, 4).map((opportunity) => (
         <article
           className={`blog-meta-three mb-80 lg-mb-40 ${opportunity.className}`}
           key={opportunity.id}
