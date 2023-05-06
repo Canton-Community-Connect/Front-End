@@ -43,7 +43,7 @@ const LoginForm = () => {
             <label>Email</label>
             <input
               type="email"
-              placeholder="hasan@gmail.com"
+              placeholder="example@gmail.com"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
