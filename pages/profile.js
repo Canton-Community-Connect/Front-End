@@ -5,6 +5,7 @@ import Features from "../components/home-page/home-4/Features";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import DefaultFooter from "../components/footer/DefaultFooter";
 
 const userData = {
   firstName: "Shadi",
@@ -89,6 +90,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
+
+      <DefaultFooter />
     </>
   );
 };
