@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Jano - Creative Multipurpose React NextJS Template"
+          content="Canton Connect - Join the Canton community and make a difference today."
         />
         <meta
           name="keywords"
