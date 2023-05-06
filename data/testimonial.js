@@ -16,7 +16,7 @@ module.exports = [
     author: "You name",
     location: "Claifornia",
     image: "/images/media/img_55.jpg",
-  },K
+  },
   {
     id: 3,
     title: "Very Solid!!",
