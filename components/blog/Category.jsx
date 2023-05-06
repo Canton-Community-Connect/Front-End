@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const Category = () => {
   const categories = [
-    { name: "Digital", count: 3 },
-    { name: "Marketing", count: 4 },
-    { name: "Design", count: 2 },
-    { name: "WordPress", count: 8 },
-    { name: "Plugin", count: 5 },
+    { name: "Technology", count: 3 },
+    { name: "Health Care", count: 4 },
+    { name: "Community", count: 2 },
+    { name: "Education/Literacy", count: 8 },
+    { name: "Animals", count: 5 },
   ];
 
   return (
