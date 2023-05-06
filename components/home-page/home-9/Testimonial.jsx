@@ -38,7 +38,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      name: "Rashed Ka",
+      name: "You name",
       location: "USA",
       rating: 5,
       content:
@@ -58,7 +58,7 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      name: "Rashed Ka",
+      name: "You name",
       location: "USA",
       rating: 5,
       content:

@@ -46,7 +46,7 @@ const OurAim = () => {
 
   const cardItem = {
     imgSrc: "/images/icon/icon_06.svg",
-    name: "- Rashed Ka",
+    name: "- You name",
     position: "CEO",
     text: "We aim to answer any query in less than",
   };
