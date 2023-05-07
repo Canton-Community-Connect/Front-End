@@ -10,8 +10,9 @@ const WizardFormFirstPage = (props) => {
             <div className="mt-3 form-style-one">
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="text"
+
+                        <Field
+                            component={renderField}
                             placeholder="Organization Name*"
                             name="name"
                             required="required"
@@ -22,8 +23,8 @@ const WizardFormFirstPage = (props) => {
                 </div>
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Organization Email"
+                        <Field
+                            component={renderField}
                             placeholder="Organization Email*"
                             name="email"
                             required="required"
@@ -34,8 +35,8 @@ const WizardFormFirstPage = (props) => {
                 </div>
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Phone Number"
+                        <Field
+                            component={renderField}
                             placeholder="Phone Number*"
                             name="phone"
                             required="required"
@@ -48,8 +49,8 @@ const WizardFormFirstPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Zip Code"
+                        <Field
+                            component={renderField}
                             placeholder="Zip Code*"
                             name="zipCode"
                             required="required"

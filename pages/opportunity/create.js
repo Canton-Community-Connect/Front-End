@@ -25,6 +25,11 @@ class CreateEvent extends Component {
         this.setState({page: this.state.page - 1})
     }
 
+    submitFinal() {
+        this.setState({page: this.state.page + 1})
+
+    }
+
     render() {
         const {onSubmit} = this.props
         const {page} = this.state
@@ -120,7 +125,8 @@ class CreateEvent extends Component {
                                         <WizardFormSecondPage previousPage={this.previousPage}
                                                               onSubmit={this.nextPage}/>}
                                     {page === 3 &&
-                                        <WizardFormThirdPage previousPage={this.previousPage} onSubmit={onSubmit}/>}
+                                        <WizardFormThirdPage previousPage={this.previousPage} onSubmit={this.nextPage}/>}
+                                    {page ===4 && <h4> Event Created Successfully</h4>}
                                 </div>
                             </div>
                         </div>

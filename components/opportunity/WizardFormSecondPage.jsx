@@ -13,8 +13,8 @@ const WizardFormSecondPage = (props) => {
             <div className="mt-3 form-style-one">
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Volunteer Name"
+                        <Field
+                            component={renderField}
                             placeholder="Volunteer Name*"
                             name="volunteerName"
                             required="required"
@@ -26,8 +26,8 @@ const WizardFormSecondPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Volunteer Location"
+                        <Field
+                            component={renderField}
                             placeholder="Volunteer Location*"
                             name="volunteerLocation"
                             required="required"
@@ -39,8 +39,8 @@ const WizardFormSecondPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Spots Available"
+                        <Field
+                            component={renderField}
                             placeholder="Spots Available ( optional )"
                             name="spotsAvailable"
                         />
@@ -50,8 +50,8 @@ const WizardFormSecondPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Requirements"
+                        <Field
+                            component={renderField}
                             placeholder="Requirements"
                             name="requirements"
                         />
@@ -61,8 +61,8 @@ const WizardFormSecondPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Volunteer Times"
+                        <Field
+                            component={renderField}
                             placeholder="Volunteer Times*"
                             name="volunteerTimes"
                             required="required"
@@ -74,8 +74,8 @@ const WizardFormSecondPage = (props) => {
 
                 <div className="col-12">
                     <div className="input-group-meta form-group mb-10">
-                        <input
-                            type="Social media links"
+                        <Field
+                            component={renderField}
                             placeholder="Social media links"
                             name="socialMediaLinks"
                         />
