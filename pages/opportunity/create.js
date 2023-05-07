@@ -73,14 +73,55 @@ class CreateEvent extends Component {
                     <div className="container"></div>
                     {/* End .container */}
 
-                    <div className="user-data-section">
+                    <div className="container">
                         <div className="row">
                             <div className="col-xl-11 m-auto">
-                                {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage}/>}
-                                {page === 2 &&
-                                    <WizardFormSecondPage previousPage={this.previousPage} onSubmit={this.nextPage}/>}
-                                {page === 3 &&
-                                    <WizardFormThirdPage previousPage={this.previousPage} onSubmit={onSubmit}/>}
+                                <div id="multi-step-form-container">
+                                    <ul className="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                                        <li
+                                            className = {(page === 1 ? 'form-stepper-active' : 'form-stepper-unfinished') + " text-center form-stepper-list"}
+                                        >
+                                            <a className="mx-2">
+                                              <span className="form-stepper-circle">
+                                                <span>
+                                                  <img src="/images/logo/Plogo11.png" alt="" width={95}/>
+                                                </span>
+                                              </span>
+                                                <div className="label">Organization Information</div>
+                                            </a>
+                                        </li>
+                                        <li
+                                            className = {(page === 2 ? 'form-stepper-active' : 'form-stepper-unfinished') + " text-center form-stepper-list"}
+                                        >
+                                            <a className="mx-2">
+              <span className="form-stepper-circle ">
+                <span>
+                  <img src="/images/logo/Plogo12.png" alt="" width={95}/>
+                </span>
+              </span>
+                                                <div className="label ">Event Details</div>
+                                            </a>
+                                        </li>
+                                        <li
+                                            className = {(page === 3 ? 'form-stepper-active' : 'form-stepper-unfinished') + " text-center form-stepper-list"}
+                                        >
+                                            <a className="mx-2">
+              <span className="form-stepper-circle text-muted">
+                <span>
+                  <img src="/images/logo/Plogo13.png" alt="" width={95}/>
+                </span>
+              </span>
+                                                <div className="label text-muted">Confirm Details</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage}/>}
+                                    {page === 2 &&
+                                        <WizardFormSecondPage previousPage={this.previousPage}
+                                                              onSubmit={this.nextPage}/>}
+                                    {page === 3 &&
+                                        <WizardFormThirdPage previousPage={this.previousPage} onSubmit={onSubmit}/>}
+                                </div>
                             </div>
                         </div>
                     </div>

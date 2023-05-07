@@ -31,7 +31,7 @@ const CallToAction = () => {
                 We’r ready to help you. Our expert is here, just send a message.
               </p>
               <Link
-                href="/opportunity/create-event"
+                href="/opportunity/create"
                 className="btn-twenty fw-500 tran3s"
                 data-aos="fade-up"
                 data-aos-delay="300"

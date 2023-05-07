@@ -81,7 +81,7 @@ const MainMenu = () => {
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
-              href="/opportunity/create-event"
+              href="/opportunity/create"
               className="btn-twentyOne fw-500 tran3s"
             >
               Create Event

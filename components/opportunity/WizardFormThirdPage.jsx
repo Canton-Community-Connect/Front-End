@@ -1,9 +1,10 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import {Field, reduxForm} from 'redux-form'
 import validate from './validate'
-const colors = [ 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet' ]
 
-const renderColorSelector = ({ input, meta: { touched, error } }) => (
+const colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+
+const renderColorSelector = ({input, meta: {touched, error}}) => (
     <div>
         <select {...input}>
             <option value="">Select a color...</option>
@@ -14,28 +15,28 @@ const renderColorSelector = ({ input, meta: { touched, error } }) => (
 )
 
 const WizardFormThirdPage = (props) => {
-    const { handleSubmit, pristine, previousPage, submitting } = props
+    const {handleSubmit, pristine, previousPage, submitting} = props
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>Favorite Color</label>
-                <Field name="favoriteColor" component={renderColorSelector}/>
-            </div>
-            <div>
-                <label htmlFor="employed">Employed</label>
-                <div>
-                    <Field name="employed" id="employed" component="input" type="checkbox"/>
-                </div>
-            </div>
-            <div>
-                <label>Notes</label>
-                <div>
-                    <Field name="notes" component="textarea" placeholder="Notes"/>
-                </div>
-            </div>
-            <div>
-                <button type="button" className="previous" onClick={previousPage}>Previous</button>
-                <button type="submit" disabled={pristine || submitting} className="btn-twentyTwo w-100 fw-500 tran3s text-uppercase mt-30">Submit</button>
+        <form onSubmit={handleSubmit} className="user-data-form mt-40 lg-mt-30">
+            <div className="mt-3">Organization Information</div>
+            <div className="mt-3">Event Details</div>
+
+            <div className="wizard-buttons">
+
+                <button
+                    className="button btn-navigate-form-step btn-twentyOne fw-500 tran3s d-inline-block me-3"
+                    type="button"
+                    onClick={previousPage}
+                >
+                    Back
+                </button>
+                <button
+                    className="button btn-navigate-form-step btn-twentyOne fw-500 tran3s d-inline-block"
+                    type="submit"
+                    disabled={pristine || submitting}
+                >
+                    Finish
+                </button>
             </div>
         </form>
     )
